@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/alumnoad/Projects/CentroDeportivo/CentroDeportivo/CentroDeportivo.Android/CentroDeportivo.Android.csproj": {}
+    "/Users/alumnoad/Projects/centro-deportivo/CentroDeportivo/CentroDeportivo.Android/CentroDeportivo.Android.csproj": {}
   },
   "projects": {
-    "/Users/alumnoad/Projects/CentroDeportivo/CentroDeportivo/CentroDeportivo.Android/CentroDeportivo.Android.csproj": {
+    "/Users/alumnoad/Projects/centro-deportivo/CentroDeportivo/CentroDeportivo.Android/CentroDeportivo.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/alumnoad/Projects/CentroDeportivo/CentroDeportivo/CentroDeportivo.Android/CentroDeportivo.Android.csproj",
+        "projectUniqueName": "/Users/alumnoad/Projects/centro-deportivo/CentroDeportivo/CentroDeportivo.Android/CentroDeportivo.Android.csproj",
         "projectName": "CentroDeportivo.Android",
-        "projectPath": "/Users/alumnoad/Projects/CentroDeportivo/CentroDeportivo/CentroDeportivo.Android/CentroDeportivo.Android.csproj",
+        "projectPath": "/Users/alumnoad/Projects/centro-deportivo/CentroDeportivo/CentroDeportivo.Android/CentroDeportivo.Android.csproj",
         "packagesPath": "/Users/alumnoad/.nuget/packages/",
-        "outputPath": "/Users/alumnoad/Projects/CentroDeportivo/CentroDeportivo/CentroDeportivo.Android/obj/",
+        "outputPath": "/Users/alumnoad/Projects/centro-deportivo/CentroDeportivo/CentroDeportivo.Android/obj/",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [
@@ -26,8 +26,8 @@
         "frameworks": {
           "monoandroid13.0": {
             "projectReferences": {
-              "/Users/alumnoad/Projects/CentroDeportivo/CentroDeportivo/CentroDeportivo/CentroDeportivo.csproj": {
-                "projectPath": "/Users/alumnoad/Projects/CentroDeportivo/CentroDeportivo/CentroDeportivo/CentroDeportivo.csproj"
+              "/Users/alumnoad/Projects/centro-deportivo/CentroDeportivo/CentroDeportivo/CentroDeportivo.csproj": {
+                "projectPath": "/Users/alumnoad/Projects/centro-deportivo/CentroDeportivo/CentroDeportivo/CentroDeportivo.csproj"
               }
             }
           }
@@ -48,14 +48,14 @@
         }
       }
     },
-    "/Users/alumnoad/Projects/CentroDeportivo/CentroDeportivo/CentroDeportivo/CentroDeportivo.csproj": {
+    "/Users/alumnoad/Projects/centro-deportivo/CentroDeportivo/CentroDeportivo/CentroDeportivo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/alumnoad/Projects/CentroDeportivo/CentroDeportivo/CentroDeportivo/CentroDeportivo.csproj",
+        "projectUniqueName": "/Users/alumnoad/Projects/centro-deportivo/CentroDeportivo/CentroDeportivo/CentroDeportivo.csproj",
         "projectName": "CentroDeportivo",
-        "projectPath": "/Users/alumnoad/Projects/CentroDeportivo/CentroDeportivo/CentroDeportivo/CentroDeportivo.csproj",
+        "projectPath": "/Users/alumnoad/Projects/centro-deportivo/CentroDeportivo/CentroDeportivo/CentroDeportivo.csproj",
         "packagesPath": "/Users/alumnoad/.nuget/packages/",
-        "outputPath": "/Users/alumnoad/Projects/CentroDeportivo/CentroDeportivo/CentroDeportivo/obj/",
+        "outputPath": "/Users/alumnoad/Projects/centro-deportivo/CentroDeportivo/CentroDeportivo/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/alumnoad/.config/NuGet/NuGet.Config"
@@ -107,7 +107,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "/Users/alumnoad/Library/Caches/VisualStudio/17.0/MSBuild/758_3/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/Users/alumnoad/Library/Caches/VisualStudio/17.0/MSBuild/18439_3/RuntimeIdentifierGraph.json"
         }
       }
     }

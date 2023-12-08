@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zc0v0/0ZWFBIuNeL5skiAkYzD3OaxFTpwepxb84JS02qQL6BHbYjPgjIGXmZwGgYFvjGwTnW0+6NheuDHkrsYg==",
+  "dgSpecHash": "GZ1LQqRV05tCn8dWt+bVs8dfShhnaolf1601SwBqkHKqAQncGo+8AFV+oB7R8kMkSOb5p6gy4zicbPT2Ltk4gg==",
   "success": true,
-  "projectFilePath": "/Users/alumnoad/Projects/CentroDeportivo/CentroDeportivo/CentroDeportivo.Android/CentroDeportivo.Android.csproj",
+  "projectFilePath": "/Users/alumnoad/Projects/centro-deportivo/CentroDeportivo/CentroDeportivo.Android/CentroDeportivo.Android.csproj",
   "expectedPackageFiles": [
     "/Users/alumnoad/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
     "/Users/alumnoad/.nuget/packages/xamarin.androidx.activity/1.2.4.1/xamarin.androidx.activity.1.2.4.1.nupkg.sha512",

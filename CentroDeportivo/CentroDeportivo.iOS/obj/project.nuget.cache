@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9jFY3pI6b3eE0W5l8dJuXpA4xlW0yOeRPBlwmRTbZzzvJ27bIoVNX0sd3s7QaQz8PQC6Y0FfjUP6GGF4Uy4SGQ==",
+  "dgSpecHash": "c1hasTuYXOWH7Nti5RGS6bCyvypobakhxGFvEj3wf10lpcNqJ1EQdymfWO4KEz20SvaUxi8zeFmf2iiyI7WvCw==",
   "success": true,
-  "projectFilePath": "/Users/alumnoad/Projects/CentroDeportivo/CentroDeportivo/CentroDeportivo.iOS/CentroDeportivo.iOS.csproj",
+  "projectFilePath": "/Users/alumnoad/Projects/centro-deportivo/CentroDeportivo/CentroDeportivo.iOS/CentroDeportivo.iOS.csproj",
   "expectedPackageFiles": [
     "/Users/alumnoad/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
     "/Users/alumnoad/.nuget/packages/xamarin.essentials/1.7.0/xamarin.essentials.1.7.0.nupkg.sha512",

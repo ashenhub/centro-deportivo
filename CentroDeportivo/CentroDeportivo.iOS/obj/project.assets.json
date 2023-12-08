@@ -1067,11 +1067,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/alumnoad/Projects/CentroDeportivo/CentroDeportivo/CentroDeportivo.iOS/CentroDeportivo.iOS.csproj",
+      "projectUniqueName": "/Users/alumnoad/Projects/centro-deportivo/CentroDeportivo/CentroDeportivo.iOS/CentroDeportivo.iOS.csproj",
       "projectName": "CentroDeportivo.iOS",
-      "projectPath": "/Users/alumnoad/Projects/CentroDeportivo/CentroDeportivo/CentroDeportivo.iOS/CentroDeportivo.iOS.csproj",
+      "projectPath": "/Users/alumnoad/Projects/centro-deportivo/CentroDeportivo/CentroDeportivo.iOS/CentroDeportivo.iOS.csproj",
       "packagesPath": "/Users/alumnoad/.nuget/packages/",
-      "outputPath": "/Users/alumnoad/Projects/CentroDeportivo/CentroDeportivo/CentroDeportivo.iOS/obj/",
+      "outputPath": "/Users/alumnoad/Projects/centro-deportivo/CentroDeportivo/CentroDeportivo.iOS/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -1086,8 +1086,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "/Users/alumnoad/Projects/CentroDeportivo/CentroDeportivo/CentroDeportivo/CentroDeportivo.csproj": {
-              "projectPath": "/Users/alumnoad/Projects/CentroDeportivo/CentroDeportivo/CentroDeportivo/CentroDeportivo.csproj"
+            "/Users/alumnoad/Projects/centro-deportivo/CentroDeportivo/CentroDeportivo/CentroDeportivo.csproj": {
+              "projectPath": "/Users/alumnoad/Projects/centro-deportivo/CentroDeportivo/CentroDeportivo/CentroDeportivo.csproj"
             }
           }
         }
