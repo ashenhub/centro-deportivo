@@ -4,10 +4,18 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="CentroDeportivo.EliminarUsuarioPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label x:Name="nombreLabelMod2"/>
-            <Label x:Name="apellidoLabel"/>
+        <StackLayout Orientation="Vertical">
+            <Entry
+            x:Name="codigoEntry"
+            Placeholder="Código de usuario"
+            FontSize="18"
+            Margin="0,0,10,10"
+            />
         </StackLayout>
+       <!-- <StackLayout>
+            <Label x:Name="nombreLabelMod2"/>
+            <Label x:Name="codigo"/>
+        </StackLayout> -->
     </ContentPage.Content>
 </ContentPage>
 

@@ -51,6 +51,15 @@
                         ThumbColor="Green"
                         OnColor="LightGreen"
                         />
+                    <Button
+                        x:Name="GuardarBtn"
+                        Text="GUARDAR"
+                        BackgroundColor="LightGray"
+                        Padding="12"
+                        TextColor="Black"
+                        FontAttributes="Bold"
+                        Clicked="AltaUsuario_Clicked"
+                        />
                 </StackLayout>
             </StackLayout>
         </StackLayout>

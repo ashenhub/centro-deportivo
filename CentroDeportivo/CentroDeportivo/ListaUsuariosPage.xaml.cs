@@ -6,11 +6,14 @@ using Xamarin.Forms;
 namespace CentroDeportivo
 {	
 	public partial class ListaUsuariosPage : ContentPage
-	{	
-		public ListaUsuariosPage ()
+	{
+        private Modelo modeloUsuarios;
+        public ListaUsuariosPage(Modelo modeloUsuarios)
 		{
-			InitializeComponent ();
-		}
+            InitializeComponent();
+            this.modeloUsuarios = modeloUsuarios;
+            //usuariosListView.ItemsSource = modeloUsuarios.GetUsuarios;
+        }
 	}
 }
 

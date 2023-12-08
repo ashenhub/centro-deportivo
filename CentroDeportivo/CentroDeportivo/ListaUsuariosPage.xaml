@@ -4,7 +4,23 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="CentroDeportivo.ListaUsuariosPage">
     <ContentPage.Content>
-        
+        <StackLayout>
+            <ListView x:Name="usuariosListView" ItemsSource="{Binding Usuarios}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <Label Text="{Binding Codigo}" />
+                                <Label Text="{Binding Nombre}" />
+                                <Label Text="{Binding Apellidos}" />
+                                <Label Text="{Binding FechaNacimiento, StringFormat='Fecha de Nacimiento: {0:dd/MM/yyyy}'}" />
+                                <Label Text="{Binding Sexo}" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
 

@@ -9,16 +9,19 @@ using Xamarin.Forms;
 namespace CentroDeportivo
 {
     public partial class MainPage : ContentPage
+
     {
+        private Modelo modeloUsuarios;
         public MainPage()
         {
             InitializeComponent();
+            modeloUsuarios = new Modelo();
             NavigationPage.SetHasNavigationBar(this, false);
         }
 
         async void AltaBtn_Clicked(System.Object sender, System.EventArgs e)
         {
-            await Navigation.PushAsync(new AltaUsuarioPage());
+            await Navigation.PushAsync(new AltaUsuarioPage(modeloUsuarios));
         }
 
         async void RegistrarBtn_Clicked(System.Object sender, System.EventArgs e)
@@ -28,7 +31,8 @@ namespace CentroDeportivo
 
         async void ListadoBtn_Clicked(System.Object sender, System.EventArgs e)
         {
-            await Navigation.PushAsync(new ListaUsuariosPage());
+
+            await Navigation.PushAsync(new ListaUsuariosPage(modeloUsuarios));
         }
 
         async void ListadoFechaBtn_Clicked(System.Object sender, System.EventArgs e)
@@ -43,7 +47,7 @@ namespace CentroDeportivo
 
         async void EliminarBtn_Clicked(System.Object sender, System.EventArgs e)
         {
-            await Navigation.PushAsync(new EliminarUsuarioPage());
+            await Navigation.PushAsync(new EliminarUsuarioPage(modeloUsuarios));
         }
     }
 }
