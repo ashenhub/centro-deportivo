@@ -1,0 +1,126 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/alumnoad/Projects/CentroDeportivo/CentroDeportivo/CentroDeportivo.iOS/CentroDeportivo.iOS.csproj": {}
+  },
+  "projects": {
+    "/Users/alumnoad/Projects/CentroDeportivo/CentroDeportivo/CentroDeportivo.iOS/CentroDeportivo.iOS.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/alumnoad/Projects/CentroDeportivo/CentroDeportivo/CentroDeportivo.iOS/CentroDeportivo.iOS.csproj",
+        "projectName": "CentroDeportivo.iOS",
+        "projectPath": "/Users/alumnoad/Projects/CentroDeportivo/CentroDeportivo/CentroDeportivo.iOS/CentroDeportivo.iOS.csproj",
+        "packagesPath": "/Users/alumnoad/.nuget/packages/",
+        "outputPath": "/Users/alumnoad/Projects/CentroDeportivo/CentroDeportivo/CentroDeportivo.iOS/obj/",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "/Users/alumnoad/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "xamarinios10"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "xamarinios10": {
+            "projectReferences": {
+              "/Users/alumnoad/Projects/CentroDeportivo/CentroDeportivo/CentroDeportivo/CentroDeportivo.csproj": {
+                "projectPath": "/Users/alumnoad/Projects/CentroDeportivo/CentroDeportivo/CentroDeportivo/CentroDeportivo.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "xamarinios10": {
+          "dependencies": {
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.7.0, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[5.0.0.2196, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "/Users/alumnoad/Projects/CentroDeportivo/CentroDeportivo/CentroDeportivo/CentroDeportivo.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/alumnoad/Projects/CentroDeportivo/CentroDeportivo/CentroDeportivo/CentroDeportivo.csproj",
+        "projectName": "CentroDeportivo",
+        "projectPath": "/Users/alumnoad/Projects/CentroDeportivo/CentroDeportivo/CentroDeportivo/CentroDeportivo.csproj",
+        "packagesPath": "/Users/alumnoad/.nuget/packages/",
+        "outputPath": "/Users/alumnoad/Projects/CentroDeportivo/CentroDeportivo/CentroDeportivo/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/alumnoad/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.7.0, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[5.0.0.2196, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/Users/alumnoad/Library/Caches/VisualStudio/17.0/MSBuild/758_3/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

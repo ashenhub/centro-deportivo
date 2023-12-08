@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="CentroDeportivo.AltaUsuarioPage">
+
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <Entry
+            x:Name="codigoEntry"
+            Placeholder="Código de usuario"
+            FontSize="18"
+            Margin="0,0,10,10"
+            />
+            <StackLayout Orientation="Horizontal" Spacing="10" Margin="0,0,0,10">
+                <Entry
+                    x:Name="nombreEntry"
+                    Placeholder="Nombre"
+                    FontSize="18"
+                    WidthRequest="140"
+                />
+                <Entry
+                    x:Name="apellidoEntry"
+                    Placeholder="Apellidos"
+                    FontSize="18"
+                    WidthRequest="260"
+                />
+            </StackLayout>
+            <DatePicker x:Name="pickerFechaNacimiento"
+                        Format="dd/MM/yyyy"/>
+            <Picker x:Name="pickerSexo"
+                    Title="Sexo">
+                <Picker.Items>
+                    <x:String>Masculino</x:String>
+                    <x:String>Femenino</x:String>
+                </Picker.Items>
+             </Picker>
+            <StackLayout Orientation="Horizontal" Margin="0,0,0,30">
+                <StackLayout Orientation="Vertical">
+                    <Label
+                        x:Name="switchLabel"
+                        Text="Indique si es socio"
+                        FontSize="14"
+                        TextColor="Gray"
+                        />
+                    <Switch
+                        x:Name="socioSwitch"
+                        HorizontalOptions="End"
+                        IsToggled="True"
+                        Scale="0.7"
+                        ThumbColor="Green"
+                        OnColor="LightGreen"
+                        />
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>
+

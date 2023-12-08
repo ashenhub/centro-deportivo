@@ -1,0 +1,37 @@
+﻿<Properties StartupConfiguration="{B85302A3-2E10-43E5-9382-87B95B955D1B}|Default">
+  <MonoDevelop.Ide.ItemProperties.CentroDeportivo.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.2CD033A5-F2D6-4771-89C4-FF0661F627A6" />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.SelectDevice" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="CentroDeportivo/CentroDeportivo/MainPage.xaml">
+    <Files>
+      <File FileName="CentroDeportivo/CentroDeportivo/MainPage.xaml.cs" />
+      <File FileName="CentroDeportivo/CentroDeportivo/MainPage.xaml" Line="18" Column="19" />
+      <File FileName="CentroDeportivo/CentroDeportivo/App.xaml.cs" />
+      <File FileName="CentroDeportivo/CentroDeportivo/AltaUsuarioPage.xaml" />
+      <File FileName="CentroDeportivo/CentroDeportivo/AltaUsuarioPage.xaml.cs" />
+      <File FileName="CentroDeportivo/CentroDeportivo/RegistrarVisitaPage.xaml" />
+      <File FileName="CentroDeportivo/CentroDeportivo/App.xaml" />
+      <File FileName="CentroDeportivo/CentroDeportivo.iOS/Main.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CentroDeportivo" expanded="True">
+            <Node name="CentroDeportivo" expanded="True">
+              <Node name="AltaUsuarioPage.xaml" expanded="True" />
+              <Node name="App.xaml" expanded="True" />
+              <Node name="MainPage.xaml" expanded="True" selected="True" />
+              <Node name="RegistrarVisitaPage.xaml" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.CentroDeportivo.Android PreferredExecutionTarget="Android.SelectDevice" />
+</Properties>

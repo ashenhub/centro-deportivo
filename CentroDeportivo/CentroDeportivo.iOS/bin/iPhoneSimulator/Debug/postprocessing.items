@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <_PostProcessingItem Include="CentroDeportivo.iOS.app/CentroDeportivo.iOS">
+      <BCSymbolMapName>CentroDeportivo.iOS.bcsymbolmap</BCSymbolMapName>
+      <NoDSymUtil>true</NoDSymUtil>
+      <dSYMSourcePathExists>false</dSYMSourcePathExists>
+      <NoSymbolStrip>true</NoSymbolStrip>
+      <dSYMInfoPlistRelativePath>CentroDeportivo.iOS.app.dSYM\Contents\Info.plist</dSYMInfoPlistRelativePath>
+      <SymbolFile>/Users/alumnoad/Projects/CentroDeportivo/CentroDeportivo/CentroDeportivo.iOS/obj/iPhoneSimulator/Debug/mtouch-symbols.list</SymbolFile>
+      <DSymName>CentroDeportivo.iOS.app.dSYM</DSymName>
+      <SourceProjectPath>/Users/alumnoad/Projects/CentroDeportivo/CentroDeportivo/CentroDeportivo.iOS</SourceProjectPath>
+    </_PostProcessingItem>
+  </ItemGroup>
+</Project>
