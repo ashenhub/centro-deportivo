@@ -15,3 +15,8 @@
 /Users/alumnoad/Projects/CentroDeportivo/CentroDeportivo/CentroDeportivo/obj/Debug/netstandard2.0/XamlC.stamp
 /Users/alumnoad/Projects/CentroDeportivo/CentroDeportivo/CentroDeportivo/obj/Debug/netstandard2.0/AltaUsuarioPage.xaml.g.cs
 /Users/alumnoad/Projects/CentroDeportivo/CentroDeportivo/CentroDeportivo/obj/Debug/netstandard2.0/RegistrarVisitaPage.xaml.g.cs
+/Users/alumnoad/Projects/CentroDeportivo/CentroDeportivo/CentroDeportivo/obj/Debug/netstandard2.0/DetalleUsuarioPage.xaml.g.cs
+/Users/alumnoad/Projects/CentroDeportivo/CentroDeportivo/CentroDeportivo/obj/Debug/netstandard2.0/EliminarUsuarioPage.xaml.g.cs
+/Users/alumnoad/Projects/CentroDeportivo/CentroDeportivo/CentroDeportivo/obj/Debug/netstandard2.0/ListaUsuariosFechaPage.xaml.g.cs
+/Users/alumnoad/Projects/CentroDeportivo/CentroDeportivo/CentroDeportivo/obj/Debug/netstandard2.0/ListaUsuariosPage.xaml.g.cs
+/Users/alumnoad/Projects/CentroDeportivo/CentroDeportivo/CentroDeportivo/obj/Debug/netstandard2.0/ModificarSocioPage.xaml.g.cs

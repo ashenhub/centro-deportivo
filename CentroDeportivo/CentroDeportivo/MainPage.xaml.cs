@@ -26,20 +26,24 @@ namespace CentroDeportivo
             await Navigation.PushAsync(new RegistrarVisitaPage());
         }
 
-        void ListadoBtn_Clicked(System.Object sender, System.EventArgs e)
+        async void ListadoBtn_Clicked(System.Object sender, System.EventArgs e)
         {
+            await Navigation.PushAsync(new ListaUsuariosPage());
         }
 
-        void ListadoFechaBtn_Clicked(System.Object sender, System.EventArgs e)
+        async void ListadoFechaBtn_Clicked(System.Object sender, System.EventArgs e)
         {
+            await Navigation.PushAsync(new ListaUsuariosFechaPage());
         }
 
-        void ModificarSocioBtn_Clicked(System.Object sender, System.EventArgs e)
+        async void ModificarSocioBtn_Clicked(System.Object sender, System.EventArgs e)
         {
+            await Navigation.PushAsync(new ModificarSocioPage());
         }
 
-        void EliminarBtn_Clicked(System.Object sender, System.EventArgs e)
+        async void EliminarBtn_Clicked(System.Object sender, System.EventArgs e)
         {
+            await Navigation.PushAsync(new EliminarUsuarioPage());
         }
     }
 }

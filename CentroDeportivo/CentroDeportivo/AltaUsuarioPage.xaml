@@ -31,8 +31,8 @@
             <Picker x:Name="pickerSexo"
                     Title="Sexo">
                 <Picker.Items>
-                    <x:String>Masculino</x:String>
                     <x:String>Femenino</x:String>
+                    <x:String>Masculino</x:String>
                 </Picker.Items>
              </Picker>
             <StackLayout Orientation="Horizontal" Margin="0,0,0,30">
