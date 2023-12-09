@@ -34,6 +34,24 @@ namespace CentroDeportivo
 
         }
 
+        public void AñadirActividad (String codigo, string nombreActividad, DateTime fechaRealizacion)
+        {
+            ActividadRealizada actividad = new ActividadRealizada(nombreActividad, fechaRealizacion);
+
+            Usuario usuarioAModificar = listaUsuarios.Find(u => u.Codigo == codigo);
+            if (usuarioAModificar != null)
+            {
+                //Añade la nueva actividad al usuario 
+                usuarioAModificar.AgregarActividadRealizada(actividad);
+            }
+            else
+            {
+                // Ya veremos como manejar estas cosas
+                throw new InvalidOperationException("No se encontró ningún usuario con el código proporcionado.");
+            }
+
+        }
+
         public List<Usuario> GetUsuarios()
         {
             return listaUsuarios;

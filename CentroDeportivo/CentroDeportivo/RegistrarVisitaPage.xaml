@@ -4,12 +4,29 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="CentroDeportivo.RegistrarVisitaPage">
     <ContentPage.Content>
-        <Entry
-            x:Name="codigoEntry"
-            Placeholder="Código de usuario"
-            FontSize="18"
-            Margin="0,0,10,10"
+        <StackLayout Orientation="Vertical">
+            <Entry
+                x:Name="codigoEntry"
+                Placeholder="Código de usuario"
+                FontSize="18"
+                Margin="0,0,10,10"
             />
+            <Entry
+                    x:Name="actividadEntry"
+                    Placeholder="Actividad nueva"
+                    FontSize="18"
+                    WidthRequest="260"
+            />
+            <Button
+                        x:Name="GuardarBtn"
+                        Text="GUARDAR"
+                        BackgroundColor="LightGray"
+                        Padding="12"
+                        TextColor="Black"
+                        FontAttributes="Bold"
+                        Clicked="AltaActividad_Clicked"
+                        />
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
 

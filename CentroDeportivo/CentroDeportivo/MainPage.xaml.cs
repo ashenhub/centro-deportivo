@@ -26,7 +26,7 @@ namespace CentroDeportivo
 
         async void RegistrarBtn_Clicked(System.Object sender, System.EventArgs e)
         {
-            await Navigation.PushAsync(new RegistrarVisitaPage());
+            await Navigation.PushAsync(new RegistrarVisitaPage(modeloUsuarios));
         }
 
         async void ListadoBtn_Clicked(System.Object sender, System.EventArgs e)

@@ -281,8 +281,8 @@
 /Users/alumnoad/Projects/centro-deportivo/CentroDeportivo/CentroDeportivo.iOS/obj/iPhoneSimulator/Debug/optimized/logoApp.png
 /Users/alumnoad/Projects/centro-deportivo/CentroDeportivo/CentroDeportivo.iOS/obj/iPhoneSimulator/Debug/optimized/
 /Users/alumnoad/Projects/centro-deportivo/CentroDeportivo/CentroDeportivo.iOS/obj/iPhoneSimulator/Debug/CentroDeportivo.iOS.csproj.AssemblyReference.cache
-/Users/alumnoad/Projects/centro-deportivo/CentroDeportivo/CentroDeportivo.iOS/obj/iPhoneSimulator/Debug/resourcestamps/CentroDeportivo.stamp
 /Users/alumnoad/Projects/centro-deportivo/CentroDeportivo/CentroDeportivo.iOS/obj/iPhoneSimulator/Debug/CentroDeportivo.iOS.csproj.CoreCompileInputs.cache
 /Users/alumnoad/Projects/centro-deportivo/CentroDeportivo/CentroDeportivo.iOS/obj/iPhoneSimulator/Debug/CentroDeportivo.iOS.csproj.CopyComplete
 /Users/alumnoad/Projects/centro-deportivo/CentroDeportivo/CentroDeportivo.iOS/obj/iPhoneSimulator/Debug/CentroDeportivo.iOS.exe
 /Users/alumnoad/Projects/centro-deportivo/CentroDeportivo/CentroDeportivo.iOS/obj/iPhoneSimulator/Debug/CentroDeportivo.iOS.pdb
+/Users/alumnoad/Projects/centro-deportivo/CentroDeportivo/CentroDeportivo.iOS/obj/iPhoneSimulator/Debug/resourcestamps/CentroDeportivo.stamp
