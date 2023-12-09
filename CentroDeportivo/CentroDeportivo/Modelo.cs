@@ -43,9 +43,9 @@ namespace CentroDeportivo
             ActividadRealizada actividad = new ActividadRealizada(nombreActividad, fechaRealizacion);
 
             Usuario usuarioAModificar = listaUsuarios.Find(u => u.Codigo == codigo);
-            if (usuarioAModificar.EsSocio == true)
+            if (usuarioAModificar != null)
             {
-                if (usuarioAModificar != null)
+                if (usuarioAModificar.EsSocio == true)
                 {
                     //Añade la nueva actividad al usuario 
                     usuarioAModificar.AgregarActividadRealizada(actividad);
@@ -53,14 +53,14 @@ namespace CentroDeportivo
                 }
                 else
                 {
-                    // Ya veremos como manejar estas cosas
-                    MostrarMensaje("Usuario no encontrado", "El usuario proporcionado no se encuentra registrado");
+                    //throw new InvalidOperationException("Este usuario no es socio");
+                    MostrarMensaje("Usuario no socio", "El usuario proporcionado no es socio");
                 }
             }
             else
             {
-                //throw new InvalidOperationException("Este usuario no es socio");
-                MostrarMensaje("Usuario no socio", "El usuario proporcionado no es socio");
+                // Ya veremos como manejar estas cosas
+                MostrarMensaje("Usuario no encontrado", "El usuario proporcionado no se encuentra registrado");
             }
 
         }
