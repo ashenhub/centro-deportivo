@@ -12,7 +12,8 @@ namespace CentroDeportivo
 		{
             InitializeComponent();
             this.modeloUsuarios = modeloUsuarios;
-            //usuariosListView.ItemsSource = modeloUsuarios.GetUsuarios;
+            BindingContext = modeloUsuarios;
+            //JODER VAYA MIERDONN AAAAAAAAAAAAAAAAA
         }
 	}
 }

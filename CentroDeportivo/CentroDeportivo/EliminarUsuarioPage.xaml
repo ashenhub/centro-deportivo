@@ -6,11 +6,20 @@
     <ContentPage.Content>
         <StackLayout Orientation="Vertical">
             <Entry
-            x:Name="codigoEntry"
-            Placeholder="Código de usuario"
-            FontSize="18"
-            Margin="0,0,10,10"
+                x:Name="codigoEntry"
+                Placeholder="Código de usuario"
+                FontSize="18"
+                Margin="0,0,10,10"
             />
+            <Button
+                x:Name="EliminarBtn"
+                Text="ELIMINAR"
+                BackgroundColor="LightGray"
+                Padding="12"
+                TextColor="Black"
+                FontAttributes="Bold"
+                Clicked="EliminarUsuario_Clicked"
+             />
         </StackLayout>
        <!-- <StackLayout>
             <Label x:Name="nombreLabelMod2"/>

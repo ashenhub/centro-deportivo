@@ -13,7 +13,7 @@ namespace CentroDeportivo
 			InitializeComponent();
             this.modeloUsuarios = modeloUsuarios;
 		}
-        private void AltaUsuario_Clicked(object sender, EventArgs e)
+        private void EliminarUsuario_Clicked(object sender, EventArgs e)
         {
             string codigo = codigoEntry.Text;
             modeloUsuarios.EliminarUsuario(codigo);

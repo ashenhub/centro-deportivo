@@ -4,17 +4,16 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="CentroDeportivo.ListaUsuariosPage">
     <ContentPage.Content>
-        <StackLayout>
-            <ListView x:Name="usuariosListView" ItemsSource="{Binding Usuarios}">
+         <StackLayout>
+            <Label Text="Lista de Usuarios" FontSize="24" HorizontalOptions="CenterAndExpand" />
+
+            <ListView ItemsSource="{Binding ListaUsuarios}" HasUnevenRows="True">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <StackLayout>
-                                <Label Text="{Binding Codigo}" />
-                                <Label Text="{Binding Nombre}" />
-                                <Label Text="{Binding Apellidos}" />
-                                <Label Text="{Binding FechaNacimiento, StringFormat='Fecha de Nacimiento: {0:dd/MM/yyyy}'}" />
-                                <Label Text="{Binding Sexo}" />
+                            <StackLayout Padding="10">
+                                <Label Text="{Binding NombreCompleto}" FontSize="18" />
+                                <!-- Puedes agregar más etiquetas según las propiedades de tu modelo de usuario -->
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>

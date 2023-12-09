@@ -42,7 +42,7 @@ namespace CentroDeportivo
 
         async void ModificarSocioBtn_Clicked(System.Object sender, System.EventArgs e)
         {
-            await Navigation.PushAsync(new ModificarSocioPage());
+            await Navigation.PushAsync(new ModificarSocioPage(modeloUsuarios));
         }
 
         async void EliminarBtn_Clicked(System.Object sender, System.EventArgs e)
