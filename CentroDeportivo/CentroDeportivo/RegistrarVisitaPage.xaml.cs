@@ -17,27 +17,21 @@ namespace CentroDeportivo
         async private void AltaActividad_Clicked(object sender, EventArgs e)
         {
             string codigo = codigoEntry.Text;
-            string actividad = actividadPicker.SelectedItem.ToString();
+            string actividad;
             DateTime fechaActual = DateTime.Now;
 
-            if (string.IsNullOrEmpty(actividad))
-            {
+            if (actividadPicker.SelectedIndex < 0)
                 await DisplayAlert("Aviso", "Aviso: por favor introduzca una actividad", "OK");
-
-            }
 
             else if (!modeloUsuarios.ValidarUsuario(codigo))
                 await DisplayAlert("Aviso", "El código introducido no se encuentra registrado", "OK");
 
             else
             {
-
+                actividad = actividadPicker.SelectedItem.ToString();
                 modeloUsuarios.RegistrarActividad(actividad, fechaActual);
-
                 await DisplayAlert("Éxito", "La actividad fue registrada correctamente", "OK");
-              
             }
-            
         }
     }
 }
