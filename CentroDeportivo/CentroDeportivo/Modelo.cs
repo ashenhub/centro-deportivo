@@ -9,6 +9,10 @@ namespace CentroDeportivo
         private List<Usuario> listaUsuarios = new List<Usuario>();
 
         //public IReadOnlyList<Usuario> ListaUsuarios => listaUsuarios.AsReadOnly();
+        public List<Usuario> ListaUsuarios
+        {
+            get { return listaUsuarios; }
+        }
 
         public Modelo()
 		{
