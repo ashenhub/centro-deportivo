@@ -5,27 +5,36 @@
     x:Class="CentroDeportivo.RegistrarVisitaPage">
     <ContentPage.Content>
         <StackLayout Orientation="Vertical">
+            <Label
+                Text="Registre una nueva actividad del usuario"
+                FontSize="17" TextColor="Gray" FontAttributes="Bold"
+                Margin="10,10"
+            />
             <Entry
                 x:Name="codigoEntry"
                 Placeholder="Código de usuario"
-                FontSize="18"
-                Margin="0,0,10,10"
+                FontSize="17" Margin="10,0,10,10"
             />
-            <Entry
-                    x:Name="actividadEntry"
-                    Placeholder="Actividad nueva"
-                    FontSize="18"
-                    WidthRequest="260"
-            />
+            <Picker
+                x:Name="actividadPicker"
+                Title="Actividad" FontSize="17"
+                Margin="10,0">
+                <Picker.Items>
+                    <x:String>Actividad Libre</x:String>
+                    <x:String>Ciclismo</x:String>
+                    <x:String>Entrenamiento Funcional</x:String>
+                    <x:String>Yoga</x:String>
+                </Picker.Items>
+            </Picker>
             <Button
-                        x:Name="GuardarBtn"
-                        Text="GUARDAR"
-                        BackgroundColor="LightGray"
-                        Padding="12"
-                        TextColor="Black"
-                        FontAttributes="Bold"
-                        Clicked="AltaActividad_Clicked"
-                        />
+                x:Name="GuardarBtn"
+                Text="GUARDAR"
+                BackgroundColor="LightGray"
+                Padding="12" Margin="10,20"
+                TextColor="Black" FontAttributes="Bold"
+                WidthRequest="190" HorizontalOptions="Start"
+                Clicked="AltaActividad_Clicked"
+            />    
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

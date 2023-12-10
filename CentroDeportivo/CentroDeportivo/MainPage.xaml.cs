@@ -12,10 +12,13 @@ namespace CentroDeportivo
 
     {
         private Modelo modeloUsuarios;
+
         public MainPage()
         {
             InitializeComponent();
             modeloUsuarios = new Modelo();
+            modeloUsuarios.DatosMock();
+
             NavigationPage.SetHasNavigationBar(this, false);
         }
 

@@ -13,13 +13,31 @@ namespace CentroDeportivo
             InitializeComponent();
             this.modeloUsuarios = modeloUsuarios;
         }
-        private void AltaActividad_Clicked(object sender, EventArgs e)
+
+        async private void AltaActividad_Clicked(object sender, EventArgs e)
         {
             string codigo = codigoEntry.Text;
-            string actividad = actividadEntry.Text;
+            string actividad = actividadPicker.SelectedItem.ToString();
             DateTime fechaActual = DateTime.Now;
-        
-            modeloUsuarios.AñadirActividad(codigo, actividad, fechaActual);
+
+            if (string.IsNullOrEmpty(actividad))
+            {
+                await DisplayAlert("Aviso", "Aviso: por favor introduzca una actividad", "OK");
+
+            }
+
+            else if (!modeloUsuarios.ValidarUsuario(codigo))
+                await DisplayAlert("Aviso", "El código introducido no se encuentra registrado", "OK");
+
+            else
+            {
+
+                modeloUsuarios.RegistrarActividad(actividad, fechaActual);
+
+                await DisplayAlert("Éxito", "La actividad fue registrada correctamente", "OK");
+              
+            }
+            
         }
     }
 }

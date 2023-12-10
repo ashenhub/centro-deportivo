@@ -45,7 +45,8 @@ namespace CentroDeportivo
             if (e.SelectedItem is Usuario selectedUsuario)
             {
                 // Realiza las acciones necesarias con el usuario seleccionado
-                DisplayAlert("Usuario Seleccionado", $"Nombre: {selectedUsuario.Nombre}\nApellidos: {selectedUsuario.Apellidos}", "OK");
+                // DisplayAlert("Usuario Seleccionado", $"Nombre: {selectedUsuario.Nombre}\nApellidos: {selectedUsuario.Apellidos}", "OK");
+                DisplayAlert("Usuario Seleccionado", $"Actividad: {selectedUsuario.ActividadesRealizadas[0].NombreActividad}\nFecha: {selectedUsuario.ActividadesRealizadas[0].FechaRealizacion}", "OK");
             }
 
            // Deselecciona el elemento del ListView

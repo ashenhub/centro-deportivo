@@ -5,26 +5,27 @@
     x:Class="CentroDeportivo.EliminarUsuarioPage">
     <ContentPage.Content>
         <StackLayout Orientation="Vertical">
+            <Label
+                Text="Introduzca el código del usuario a eliminar"
+                FontSize="17" TextColor="Gray" FontAttributes="Bold"
+                Margin="10,10"
+            />
             <Entry
                 x:Name="codigoEntry"
                 Placeholder="Código de usuario"
                 FontSize="18"
-                Margin="0,0,10,10"
+                Margin="10,10,10,10"
             />
             <Button
                 x:Name="EliminarBtn"
                 Text="ELIMINAR"
                 BackgroundColor="LightGray"
-                Padding="12"
-                TextColor="Black"
-                FontAttributes="Bold"
+                Padding="12" Margin="10,20"
+                TextColor="Black" FontAttributes="Bold"
+                WidthRequest="190" HorizontalOptions="Start"
                 Clicked="EliminarUsuario_Clicked"
-             />
+            />    
         </StackLayout>
-       <!-- <StackLayout>
-            <Label x:Name="nombreLabelMod2"/>
-            <Label x:Name="codigo"/>
-        </StackLayout> -->
     </ContentPage.Content>
 </ContentPage>
 

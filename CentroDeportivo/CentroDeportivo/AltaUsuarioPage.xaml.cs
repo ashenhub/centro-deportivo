@@ -16,34 +16,42 @@ namespace CentroDeportivo
 
         private void AltaUsuario_Clicked(object sender, EventArgs e)
         {
-            // Recopila datos del usuario desde la interfaz de usuario
             string codigo = codigoEntry.Text;
             string nombre = nombreEntry.Text;
             string apellidos = apellidoEntry.Text;
-            int sexo = pickerSexo.SelectedIndex;
             DateTime fechaNacimiento = pickerFechaNacimiento.Date;
+            string sexo = pickerSexo.SelectedIndex.ToString();
             bool esSocio = socioSwitch.IsToggled;
-            // Crea un nuevo objeto Usuario
-            Usuario nuevoUsuario = new Usuario
-            {
-                Nombre = nombre,
-                Apellidos = apellidos,
-                Codigo = codigo,
-                Sexo = sexo,
-                FechaNacimiento = fechaNacimiento,
-                EsSocio = esSocio
-            };
 
-            // Agrega el usuario a la lista, esta lista piensoque debería estar
-            // en un modelo o en la clase usuario para asi tener los datos compartidos
-            modeloUsuarios.AgregarUsuario(nuevoUsuario);
+            if (string.IsNullOrEmpty(codigo))
+            {
+                DisplayAlert("Aviso", "Usuario no añadido: el código no puede estar vacío", "OK");
+
+            }
+                    
+            else if (modeloUsuarios.ValidarUsuario(codigo))
+            {
+                DisplayAlert("Aviso", "Usuario no añadido: el código ya existe en el sistema", "OK");
+            }
+                    
+            else
+            {
+                Usuario nuevoUsuario = new Usuario(codigo, nombre, apellidos, fechaNacimiento, esSocio, sexo);
+                modeloUsuarios.AgregarUsuario(nuevoUsuario);
+                DisplayAlert("Éxito", "Usuario añadido correctamente", "OK");
+            }
+
             LimpiarCampos();
         }
+
         private void LimpiarCampos()
         {
             nombreEntry.Text = string.Empty;
             apellidoEntry.Text = string.Empty;
             codigoEntry.Text = string.Empty;
+            pickerFechaNacimiento.Date = DateTime.Now;
+            pickerSexo.SelectedIndex = -1;
+            socioSwitch.IsToggled = true;
 
         }
     }

@@ -6,62 +6,67 @@
 
     <ContentPage.Content>
         <StackLayout Orientation="Vertical">
+            <Label
+                Text="Rellene los campos para dar de alta a un usuario"
+                FontSize="17" TextColor="Gray" FontAttributes="Bold"
+                Margin="10,10"
+            />
             <Entry
-            x:Name="codigoEntry"
-            Placeholder="Código de usuario"
-            FontSize="18"
-            Margin="0,0,10,10"
+                x:Name="codigoEntry"
+                Placeholder="Código de usuario"
+                FontSize="17"
+                Margin="10,0,10,10"
             />
             <StackLayout Orientation="Horizontal" Spacing="10" Margin="0,0,0,10">
                 <Entry
-                    x:Name="nombreEntry"
-                    Placeholder="Nombre"
-                    FontSize="18"
+                    x:Name="nombreEntry" Placeholder="Nombre"
+                    FontSize="17" Margin="10,0"
                     WidthRequest="140"
                 />
                 <Entry
-                    x:Name="apellidoEntry"
-                    Placeholder="Apellidos"
-                    FontSize="18"
-                    WidthRequest="260"
+                    x:Name="apellidoEntry" Placeholder="Apellidos"
+                    FontSize="17" Margin="0,0,10,0"
+                    WidthRequest="250"
                 />
             </StackLayout>
-            <DatePicker x:Name="pickerFechaNacimiento"
-                        Format="dd/MM/yyyy"/>
-            <Picker x:Name="pickerSexo"
-                    Title="Sexo">
+            <DatePicker
+                x:Name="pickerFechaNacimiento"
+                Format="dd/MM/yyyy" FontSize="17"
+                Margin="10,0"
+            />
+            <Picker
+                x:Name="pickerSexo"
+                Title="Sexo" FontSize="17"
+                Margin="10,10">
                 <Picker.Items>
                     <x:String>Femenino</x:String>
                     <x:String>Masculino</x:String>
                 </Picker.Items>
              </Picker>
-            <StackLayout Orientation="Horizontal" Margin="0,0,0,30">
-                <StackLayout Orientation="Vertical">
-                    <Label
-                        x:Name="switchLabel"
-                        Text="Indique si es socio"
-                        FontSize="14"
-                        TextColor="Gray"
-                        />
-                    <Switch
-                        x:Name="socioSwitch"
-                        HorizontalOptions="End"
-                        IsToggled="True"
-                        Scale="0.7"
-                        ThumbColor="Green"
-                        OnColor="LightGreen"
-                        />
-                    <Button
-                        x:Name="GuardarBtn"
-                        Text="GUARDAR"
-                        BackgroundColor="LightGray"
-                        Padding="12"
-                        TextColor="Black"
-                        FontAttributes="Bold"
-                        Clicked="AltaUsuario_Clicked"
-                        />
-                </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label
+                    x:Name="switchLabel"
+                    Text="Indique si es socio"
+                    FontSize="15" TextColor="Gray"
+                    Margin="10,5"
+                />
+                <Switch
+                    x:Name="socioSwitch"
+                    IsToggled="True"
+                    Scale="0.7"
+                    ThumbColor="White"
+                    OnColor="LightGreen"
+                />
             </StackLayout>
+            <Button
+                x:Name="GuardarBtn"
+                Text="GUARDAR"
+                BackgroundColor="LightGray"
+                Padding="12" Margin="10,20"
+                TextColor="Black" FontAttributes="Bold"
+                WidthRequest="190" HorizontalOptions="Start"
+                Clicked="AltaUsuario_Clicked"
+            />    
         </StackLayout>
     </ContentPage.Content>
 

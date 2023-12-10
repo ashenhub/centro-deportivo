@@ -13,10 +13,21 @@ namespace CentroDeportivo
 			InitializeComponent();
             this.modeloUsuarios = modeloUsuarios;
 		}
-        private void EliminarUsuario_Clicked(object sender, EventArgs e)
+
+        async private void EliminarUsuario_Clicked(object sender, EventArgs e)
         {
             string codigo = codigoEntry.Text;
-            modeloUsuarios.EliminarUsuario(codigo);
+
+            if (!modeloUsuarios.ValidarUsuario(codigo))
+            {
+                await DisplayAlert("Aviso", "El código introducido no se encuentra registrado", "OK");
+            }
+            else
+            {
+                modeloUsuarios.EliminarUsuario();
+                await DisplayAlert("Éxito", "Se eliminó el usuario y su historial", "OK");
+            }
+            
         }
 
     }

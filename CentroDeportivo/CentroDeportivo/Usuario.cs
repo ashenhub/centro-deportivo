@@ -10,15 +10,15 @@ namespace CentroDeportivo
         public string Apellidos { get; set; }
         public DateTime FechaNacimiento { get; set; }
         public bool EsSocio { get; set; } //true=socio, false=noSocio
-        public int Sexo { get; set; } //valor del indice del picker 0=Femenino 1=Masculino
-                                      //Necesita una coleccion para guardar visitas [actividad - fecha] 
-        public List<ActividadRealizada> ActividadesRealizadas = new List<ActividadRealizada>();
+        public string Sexo { get; set; } //valor del indice del picker 0=Femenino 1=Masculino
+        public List<ActividadRealizada> ActividadesRealizadas = new List<ActividadRealizada>(); //coleccion para guardar visitas [actividad - fecha] 
 
         public Usuario()
 		{
 		}
 
-        public Usuario(string codigo, string nombre, string apellidos, DateTime fechaNacimiento, bool esSocio, int sexo, ActividadRealizada actividad)
+        //en Alta no hay que pasar la lista de actividades
+        public Usuario(string codigo, string nombre, string apellidos, DateTime fechaNacimiento, bool esSocio, string sexo)
         {
             this.Codigo = codigo;
             this.Nombre = nombre;
@@ -26,10 +26,6 @@ namespace CentroDeportivo
             this.FechaNacimiento = fechaNacimiento;
             this.EsSocio = esSocio;
             this.Sexo = sexo;
-            
-            // dar una vuelta a esto. En registrar actividad, recorrer la lista de usuarios del modelo
-            //buscando el usuario por su codigo, cuando lo encuentre hacer un setActividadRealizada para añadirla
-
         }
 
         public void AgregarActividadRealizada(ActividadRealizada actividad)
