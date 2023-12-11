@@ -7,7 +7,7 @@ namespace CentroDeportivo
         public string NombreActividad { get; set; }
         public DateTime FechaRealizacion { get; set; }
 
-        public ActividadRealizada(String nombreActividad, DateTime fecha)
+        public ActividadRealizada(string nombreActividad, DateTime fecha)
         {
             NombreActividad = nombreActividad;
             FechaRealizacion = fecha;

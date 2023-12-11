@@ -13,25 +13,27 @@ namespace CentroDeportivo
         {
         }
 
-        public void DatosMock()
-        {
-            ActividadRealizada a1, a2; //Añadir sobrecarga en Usuario que permita añadir actividad para pruebas
-
-            a1 = new ActividadRealizada("ciclismo", new DateTime(2023, 09, 22));
-            a2 = new ActividadRealizada("entrenamiento funcional", new DateTime(2023, 07, 12));
-
-            listaUsuarios.Add(new Usuario("12345", "Persona1", "Ape1 Ape2",
-                new DateTime(2000, 09, 12), true, "Femenino"));
-            listaUsuarios.Add(new Usuario("67890A", "Persona2", "Ape1",
-                new DateTime(1999, 08, 20), false, "Masculino"));
-        }
-
-        //public IReadOnlyList<Usuario> ListaUsuarios => listaUsuarios.AsReadOnly();
         public List<Usuario> ListaUsuarios
         {
-            get {
+            get
+            {
                 return listaUsuarios;
             }
+        }
+
+        public void DatosMock()
+        {
+            ActividadRealizada a1, a2, a3, a4;
+
+            a1 = new ActividadRealizada("Ciclismo", new DateTime(2023, 09, 22));
+            a2 = new ActividadRealizada("Entrenamiento Funcional", new DateTime(2023, 07, 12));
+            a3 = new ActividadRealizada("Yoga", new DateTime(2023, 05, 10));
+            a4 = new ActividadRealizada("Actividad Libre", new DateTime(2023, 05, 10));
+
+            listaUsuarios.Add(new Usuario("12345", "Juan", "López García", new DateTime(1995, 05, 20), true, "Masculino", a1, a3, a4));
+            listaUsuarios.Add(new Usuario("67890", "María", "Martínez Pérez", new DateTime(1988, 11, 03), false, "Femenino", a2, a1, a4));
+            listaUsuarios.Add(new Usuario("13579", "Carlos", "Fernández Rodríguez", new DateTime(2002, 03, 15), true, "Masculino", a3, a2, a4));
+
         }
 
         public bool ValidarUsuario(string codigo)

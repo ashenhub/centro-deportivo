@@ -9,15 +9,14 @@ namespace CentroDeportivo
         public string Nombre { get; set; }
         public string Apellidos { get; set; }
         public DateTime FechaNacimiento { get; set; }
-        public bool EsSocio { get; set; } //true=socio, false=noSocio
-        public string Sexo { get; set; } //valor del indice del picker 0=Femenino 1=Masculino
-        public List<ActividadRealizada> ActividadesRealizadas { get; set; } = new List<ActividadRealizada>(); //coleccion para guardar visitas [actividad - fecha] 
+        public bool EsSocio { get; set; } 
+        public string Sexo { get; set; }
+        public List<ActividadRealizada> ActividadesRealizadas { get; set; } = new List<ActividadRealizada>(); 
 
         public Usuario()
 		{
 		}
 
-        //en Alta no hay que pasar la lista de actividades
         public Usuario(string codigo, string nombre, string apellidos, DateTime fechaNacimiento, bool esSocio, string sexo)
         {
             this.Codigo = codigo;
@@ -26,6 +25,20 @@ namespace CentroDeportivo
             this.FechaNacimiento = fechaNacimiento;
             this.EsSocio = esSocio;
             this.Sexo = sexo;
+        }
+
+        public Usuario(string codigo, string nombre, string apellidos, DateTime fechaNacimiento, bool esSocio, string sexo,
+                       ActividadRealizada a1, ActividadRealizada a2, ActividadRealizada a3)
+        {
+            this.Codigo = codigo;
+            this.Nombre = nombre;
+            this.Apellidos = apellidos;
+            this.FechaNacimiento = fechaNacimiento;
+            this.EsSocio = esSocio;
+            this.Sexo = sexo;
+            AgregarActividadRealizada(a1);
+            AgregarActividadRealizada(a2);
+            AgregarActividadRealizada(a3);
         }
 
         public void AgregarActividadRealizada(ActividadRealizada actividad)
