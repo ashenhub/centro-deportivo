@@ -9,8 +9,8 @@ namespace CentroDeportivo
 
         public ActividadRealizada(String nombreActividad, DateTime fecha)
         {
-            this.NombreActividad = nombreActividad;
-            this.FechaRealizacion = fecha;
+            NombreActividad = nombreActividad;
+            FechaRealizacion = fecha;
         }
     }
 }

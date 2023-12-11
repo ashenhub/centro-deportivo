@@ -39,14 +39,15 @@ namespace CentroDeportivo
             };
         }
 
-        private void OnUsuarioSelected(object sender, SelectedItemChangedEventArgs e)
+        private async void OnUsuarioSelected(object sender, SelectedItemChangedEventArgs e)
         {
             // Aquí puedes manejar la selección del usuario
             if (e.SelectedItem is Usuario selectedUsuario)
             {
                 // Realiza las acciones necesarias con el usuario seleccionado
                 // DisplayAlert("Usuario Seleccionado", $"Nombre: {selectedUsuario.Nombre}\nApellidos: {selectedUsuario.Apellidos}", "OK");
-                DisplayAlert("Usuario Seleccionado", $"Actividad: {selectedUsuario.ActividadesRealizadas[0].NombreActividad}\nFecha: {selectedUsuario.ActividadesRealizadas[0].FechaRealizacion}", "OK");
+                //DisplayAlert("Usuario Seleccionado", $"Actividad: {selectedUsuario.ActividadesRealizadas[0].NombreActividad}\nFecha: {selectedUsuario.ActividadesRealizadas[0].FechaRealizacion}", "OK");
+                await Navigation.PushAsync(new DetalleUsuarioPage(selectedUsuario));
             }
 
            // Deselecciona el elemento del ListView

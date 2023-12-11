@@ -11,7 +11,7 @@ namespace CentroDeportivo
         public DateTime FechaNacimiento { get; set; }
         public bool EsSocio { get; set; } //true=socio, false=noSocio
         public string Sexo { get; set; } //valor del indice del picker 0=Femenino 1=Masculino
-        public List<ActividadRealizada> ActividadesRealizadas = new List<ActividadRealizada>(); //coleccion para guardar visitas [actividad - fecha] 
+        public List<ActividadRealizada> ActividadesRealizadas { get; set; } = new List<ActividadRealizada>(); //coleccion para guardar visitas [actividad - fecha] 
 
         public Usuario()
 		{
