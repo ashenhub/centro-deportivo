@@ -20,18 +20,13 @@
                 Clicked="BuscarFecha_Clicked"
             />
 
-            <ListView
-                x:Name="actividadListView"
-                Margin="10,20"
-                VerticalOptions="FillAndExpand" HeightRequest="50">
-                <ListView.Header>
-                    <Label Text="Actividades Realizadas" FontAttributes="Bold"/>
-                </ListView.Header>
+            <ListView x:Name="usuariosFechaListView" ItemSelected="usuariosListView_ItemSelected" IsVisible="false">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <StackLayout Orientation="Horizontal">
-                                <Label Text="{Binding NombreActividad}" VerticalOptions="Center"/>
+                            <StackLayout Orientation="Horizontal" Margin="10">
+                                <Label Text="{Binding Nombre}" VerticalOptions="Center"/>
+                                <Label Text="{Binding Apellidos}" VerticalOptions="Center"/>
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>

@@ -42,3 +42,4 @@
 /Users/alumnoad/Projects/centro-deportivo/CentroDeportivo/CentroDeportivo/obj/Debug/netstandard2.0/CentroDeportivo.dll
 /Users/alumnoad/Projects/centro-deportivo/CentroDeportivo/CentroDeportivo/obj/Debug/netstandard2.0/refint/CentroDeportivo.dll
 /Users/alumnoad/Projects/centro-deportivo/CentroDeportivo/CentroDeportivo/obj/Debug/netstandard2.0/CentroDeportivo.pdb
+/Users/alumnoad/Projects/CentroDeportivo/CentroDeportivo/CentroDeportivo/obj/Debug/netstandard2.0/DetalleUsuarioFechaPage.xaml.g.cs

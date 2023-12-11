@@ -1,40 +1,54 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
+using System.Collections.ObjectModel;
 using Xamarin.Forms;
-using Xamarin.Forms.PlatformConfiguration.iOSSpecific;
 
 namespace CentroDeportivo
 {
     public partial class ListaUsuariosFechaPage : ContentPage
     {
         private Modelo modeloUsuarios;
+        private List<Usuario> listaUsuariosAux = new List<Usuario>();
+        private Usuario usuarioAux;
+        private DateTime fechaActividad;
+
+
         public ListaUsuariosFechaPage(Modelo modeloUsuarios)
         {
             InitializeComponent();
             this.modeloUsuarios = modeloUsuarios;
 
-
         }
 
         private void BuscarFecha_Clicked(object sender, EventArgs e)
         {
-            DateTime fechaActividad = pickerFechaActividad.Date;
-            List<Usuario> usuariosEnFecha = ObtenerUsuariosEnFecha(fechaActividad);
-            actividadListView.ItemsSource = usuariosEnFecha;
+            listaUsuariosAux.Clear();
+            usuariosFechaListView.IsVisible = false;
+            fechaActividad = pickerFechaActividad.Date;
 
+            foreach (Usuario usuario in modeloUsuarios.ListaUsuarios)
+            {
+                foreach (ActividadRealizada actividadRealizada in usuario.ActividadesRealizadas)
+                {
+                    if (actividadRealizada.FechaRealizacion == fechaActividad)
+                    {
+                        usuarioAux = usuario;
 
+                        if (!listaUsuariosAux.Contains(usuarioAux))
+                            listaUsuariosAux.Add(usuarioAux);
+                    }
+                }
+            }
+            usuariosFechaListView.ItemsSource = new ObservableCollection<Usuario>(listaUsuariosAux);
+            usuariosFechaListView.IsVisible = true;
         }
 
-        private List<Usuario> ObtenerUsuariosEnFecha(DateTime fecha)
+        private async void usuariosListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            // Filtra la lista de usuarios según las actividades realizadas en la fecha
-            return modeloUsuarios.ListaUsuarios
-                .Where(usuario => usuario.ActividadesRealizadas.Any(actividad => actividad.FechaRealizacion.Date == fecha.Date))
-                .ToList();
+            if (e.SelectedItem is Usuario selectedUsuario)
+                await Navigation.PushAsync(new DetalleUsuarioFechaPage(selectedUsuario, fechaActividad));
+
+            ((ListView)sender).SelectedItem = null;
         }
-
-
-
     }
 }
