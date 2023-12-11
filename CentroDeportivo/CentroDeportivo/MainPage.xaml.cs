@@ -40,7 +40,7 @@ namespace CentroDeportivo
 
         async void ListadoFechaBtn_Clicked(System.Object sender, System.EventArgs e)
         {
-            await Navigation.PushAsync(new ListaUsuariosFechaPage());
+            await Navigation.PushAsync(new ListaUsuariosFechaPage(modeloUsuarios));
         }
 
         async void ModificarSocioBtn_Clicked(System.Object sender, System.EventArgs e)

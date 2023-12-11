@@ -4,7 +4,39 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="CentroDeportivo.ListaUsuariosFechaPage">
     <ContentPage.Content>
-        
+        <StackLayout Orientation="Vertical">
+            <DatePicker
+                    x:Name="pickerFechaActividad"
+                    Format="dd/MM/yyyy" FontSize="17"
+                    Margin="10,0"
+                />
+             <Button
+                x:Name="AceptarBtn"
+                Text="ACEPTAR"
+                BackgroundColor="LightGray"
+                Padding="12" Margin="10,20"
+                TextColor="Black" FontAttributes="Bold"
+                WidthRequest="190" HorizontalOptions="Start"
+                Clicked="BuscarFecha_Clicked"
+            />
+
+            <ListView
+                x:Name="actividadListView"
+                Margin="10,20"
+                VerticalOptions="FillAndExpand" HeightRequest="50">
+                <ListView.Header>
+                    <Label Text="Actividades Realizadas" FontAttributes="Bold"/>
+                </ListView.Header>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding NombreActividad}" VerticalOptions="Center"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+    </StackLayout>
     </ContentPage.Content>
 </ContentPage>
-
