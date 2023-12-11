@@ -4,44 +4,69 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="CentroDeportivo.DetalleUsuarioPage">
     <ContentPage.Content>
-        <StackLayout>
-            <!-- Puedes agregar otros elementos o controles aquí según tus necesidades -->
-            <Label Text="Detalles del Usuario"
-                   FontAttributes="Bold"
-                   HorizontalOptions="CenterAndExpand"
-                   VerticalOptions="StartAndExpand" />
-
-            <Label x:Name="nombreLabel"
-                   HorizontalOptions="CenterAndExpand"
-                   VerticalOptions="CenterAndExpand" />
-
-            <Label x:Name="apellidosLabel"
-                   HorizontalOptions="CenterAndExpand"
-                   VerticalOptions="CenterAndExpand" />
-
-            <Label x:Name="codigoLabel"
-                   HorizontalOptions="CenterAndExpand"
-                   VerticalOptions="CenterAndExpand" />
-
-            <Label x:Name="sexoLabel"
-                   HorizontalOptions="CenterAndExpand"
-                   VerticalOptions="CenterAndExpand" />
-
-            <Label x:Name="socioLabel"
-                   HorizontalOptions="CenterAndExpand"
-                   VerticalOptions="CenterAndExpand" />
-
-
-            <ListView x:Name="actividadesListView"
-                      VerticalOptions="FillAndExpand"
-                      HasUnevenRows="True">
+        <StackLayout Orientation="Vertical">
+            <StackLayout Orientation="Horizontal" Spacing="10" Margin="0,0,0,10">
+                <Label
+                    Text="Detalles del Usuario"
+                    FontSize="17" FontAttributes="Bold"
+                    Margin="10,10"
+                />
+                <Label
+                    x:Name="codigoLabel"
+                    FontSize="17" FontAttributes="Bold"
+                    Margin="10,10"
+                />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Spacing="10" Margin="0,0,0,10">
+                <Label
+                    x:Name="nombreLabel"
+                    FontSize="16"
+                    Margin="10,0,10,10"
+                />
+                <Label
+                    x:Name="apellidosLabel"
+                    FontSize="16"
+                    Margin="10,0,10,10"
+                />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Margin="0,0,0,10">
+                <Label
+                    x:Name="fechaNacLabel"
+                    FontSize="16"
+                    Margin="10,0,0,10"
+                />
+                <Label
+                    x:Name="sexoLabel"
+                    FontSize="16"
+                    Margin="0,0,10,10"
+                />
+                <Label
+                    x:Name="socioLabel"
+                    FontSize="16"
+                    Margin="10,0,10,10"
+                />
+            </StackLayout>
+            
+            <ListView
+                x:Name="actividadListView"
+                Margin="10,20"
+                VerticalOptions="FillAndExpand" HeightRequest="50">
+                <ListView.Header>
+                    <Label Text="Actividades Realizadas" FontAttributes="Bold"/>
+                </ListView.Header>
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <TextCell Text="{Binding NombreActividad}" Detail="{Binding FechaRealizacion}" />
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding NombreActividad}" VerticalOptions="Center"/>
+                                <Label Text="{Binding FechaRealizacion}" VerticalOptions="Center"/>
+                            </StackLayout>
+                        </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-        </StackLayout> 
+
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
 

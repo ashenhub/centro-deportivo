@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using System.Text;
 using Xamarin.Forms;
 
 namespace CentroDeportivo
@@ -8,42 +8,31 @@ namespace CentroDeportivo
     public partial class DetalleUsuarioPage : ContentPage
     {
         private Usuario usuario;
+
         public DetalleUsuarioPage(Usuario selectedUsuario)
         {
             InitializeComponent();
 
             usuario = selectedUsuario;
             BindingContext = usuario;
-            MostrarDetallesUsuario();
-            MostrarActividades();
+            MostrarDetalleUsuario();
 
         }
 
-        private void MostrarDetallesUsuario()
+        private void MostrarDetalleUsuario()
         {
             nombreLabel.Text = $"Nombre: {usuario.Nombre}";
             apellidosLabel.Text = $"Apellidos: {usuario.Apellidos}";
-            codigoLabel.Text = $"Codigo: {usuario.Codigo}";
+            codigoLabel.Text = $"Código: {usuario.Codigo}";
+            fechaNacLabel.Text = $"Fecha de Nacimiento: {usuario.FechaNacimiento}";
             sexoLabel.Text = $"Sexo: {usuario.Sexo}";
-            socioLabel.Text = $"Es Socio: {usuario.EsSocio}";
 
+            if (usuario.EsSocio)
+                socioLabel.Text = "Es Socio";
+            else
+                socioLabel.Text = "No es Socio";
 
-        }
-
-        private void MostrarActividades()
-        {
-            var listView = new ListView
-            {
-                ItemsSource = usuario.ActividadesRealizadas,
-                ItemTemplate = new DataTemplate(() =>
-                {
-                    var textCell = new TextCell();
-                    textCell.SetBinding(TextCell.TextProperty, "NombreActividad");
-                    textCell.SetBinding(TextCell.DetailProperty, "FechaRealizacion");
-                    return textCell;
-                })
-            };
-
+            actividadListView.ItemsSource = usuario.ActividadesRealizadas;
         }
     }
 }

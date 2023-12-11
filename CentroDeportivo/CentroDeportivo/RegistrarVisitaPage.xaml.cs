@@ -18,7 +18,7 @@ namespace CentroDeportivo
         {
             string codigo = codigoEntry.Text;
             string actividad;
-            DateTime fechaActual = DateTime.Now;
+            DateTime fechaActual = pickerFechaActividad.Date;
 
             if (actividadPicker.SelectedIndex < 0)
                 await DisplayAlert("Aviso", "Aviso: por favor introduzca una actividad", "OK");

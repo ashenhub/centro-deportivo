@@ -18,7 +18,7 @@
             <Picker
                 x:Name="actividadPicker"
                 Title="Actividad" FontSize="17"
-                Margin="10,0">
+                Margin="10,0,10,10">
                 <Picker.Items>
                     <x:String>Actividad Libre</x:String>
                     <x:String>Ciclismo</x:String>
@@ -26,6 +26,11 @@
                     <x:String>Yoga</x:String>
                 </Picker.Items>
             </Picker>
+            <DatePicker
+                x:Name="pickerFechaActividad"
+                Format="dd/MM/yyyy" FontSize="17"
+                Margin="10,0"
+            />
             <Button
                 x:Name="GuardarBtn"
                 Text="GUARDAR"

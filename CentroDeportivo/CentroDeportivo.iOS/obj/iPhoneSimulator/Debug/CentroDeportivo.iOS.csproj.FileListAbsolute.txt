@@ -127,6 +127,7 @@
 /Users/alumnoad/Projects/centro-deportivo/CentroDeportivo/CentroDeportivo.iOS/obj/iPhoneSimulator/Debug/CentroDeportivo.iOS.exe
 /Users/alumnoad/Projects/centro-deportivo/CentroDeportivo/CentroDeportivo.iOS/obj/iPhoneSimulator/Debug/CentroDeportivo.iOS.pdb
 /Users/alumnoad/Projects/CentroDeportivo/CentroDeportivo/CentroDeportivo.iOS/obj/iPhoneSimulator/Debug/resourcestamps/CentroDeportivo.stamp
+/Users/alumnoad/Projects/centro-deportivo/CentroDeportivo/CentroDeportivo.iOS/obj/iPhoneSimulator/Debug/resourcestamps/CentroDeportivo.stamp
 /Users/alumnoad/Projects/CentroDeportivo/CentroDeportivo/CentroDeportivo.iOS/obj/iPhoneSimulator/Debug/resourcestamps/mscorlib.stamp
 /Users/alumnoad/Projects/CentroDeportivo/CentroDeportivo/CentroDeportivo.iOS/obj/iPhoneSimulator/Debug/resourcestamps/OpenTK-1.0.stamp
 /Users/alumnoad/Projects/CentroDeportivo/CentroDeportivo/CentroDeportivo.iOS/obj/iPhoneSimulator/Debug/resourcestamps/System.Core.stamp
@@ -285,4 +286,3 @@
 /Users/alumnoad/Projects/CentroDeportivo/CentroDeportivo/CentroDeportivo.iOS/obj/iPhoneSimulator/Debug/resourcestamps/System.Xml.Xsl.Primitives.stamp
 /Users/alumnoad/Projects/CentroDeportivo/CentroDeportivo/CentroDeportivo.iOS/obj/iPhoneSimulator/Debug/resourcestamps/System.Net.Http.stamp
 /Users/alumnoad/Projects/CentroDeportivo/CentroDeportivo/CentroDeportivo.iOS/obj/iPhoneSimulator/Debug/resourcestamps/System.Runtime.Serialization.stamp
-/Users/alumnoad/Projects/centro-deportivo/CentroDeportivo/CentroDeportivo.iOS/obj/iPhoneSimulator/Debug/resourcestamps/CentroDeportivo.stamp

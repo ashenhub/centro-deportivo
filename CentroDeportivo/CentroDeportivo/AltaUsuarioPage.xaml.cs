@@ -20,7 +20,7 @@ namespace CentroDeportivo
             string nombre = nombreEntry.Text;
             string apellidos = apellidoEntry.Text;
             DateTime fechaNacimiento = pickerFechaNacimiento.Date;
-            string sexo = pickerSexo.SelectedIndex.ToString();
+            string sexo = pickerSexo.SelectedItem.ToString();
             bool esSocio = socioSwitch.IsToggled;
 
             if (string.IsNullOrEmpty(codigo))
