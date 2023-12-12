@@ -19,11 +19,14 @@ namespace CentroDeportivo
             string actividad;
             DateTime fechaActual = pickerFechaActividad.Date;
 
-            if (actividadPicker.SelectedIndex < 0)
-                await DisplayAlert("Aviso", "Aviso: por favor introduzca una actividad", "OK");
+            if (string.IsNullOrEmpty(codigo))
+                await DisplayAlert("Aviso", "El código no puede estar vacío", "OK");
 
             else if (!modeloUsuarios.ValidarUsuario(codigo))
                 await DisplayAlert("Aviso", "El código introducido no se encuentra registrado", "OK");
+
+            else if (actividadPicker.SelectedIndex < 0)
+                await DisplayAlert("Aviso", "Por favor, seleccione una actividad", "OK");
 
             else
             {

@@ -32,6 +32,7 @@ namespace CentroDeportivo
                 socioLabel.Text = "No es Socio";
 
             actividadListView.ItemsSource = usuario.ActividadesRealizadas;
+            actividadesHeader.Text = "Actividades Realizadas (" + usuario.ActividadesRealizadas.Count + ")";
         }
     }
 }

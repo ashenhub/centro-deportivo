@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-
 using Xamarin.Forms;
 
 namespace CentroDeportivo
@@ -8,6 +6,7 @@ namespace CentroDeportivo
 	public partial class EliminarUsuarioPage : ContentPage
 	{
         private Modelo modeloUsuarios;
+
         public EliminarUsuarioPage (Modelo modeloUsuarios)
 		{
 			InitializeComponent();
@@ -18,7 +17,10 @@ namespace CentroDeportivo
         {
             string codigo = codigoEntry.Text;
 
-            if (!modeloUsuarios.ValidarUsuario(codigo))
+            if (string.IsNullOrEmpty(codigo))
+                await DisplayAlert("Aviso", "El código no puede estar vacío", "OK");
+
+            else if (!modeloUsuarios.ValidarUsuario(codigo))
                 await DisplayAlert("Aviso", "El código introducido no se encuentra registrado", "OK");
       
             else
@@ -26,9 +28,7 @@ namespace CentroDeportivo
                 modeloUsuarios.EliminarUsuario();
                 await DisplayAlert("Éxito", "Se eliminó el usuario y su historial", "OK");
             }
-            
         }
-
     }
 }
 

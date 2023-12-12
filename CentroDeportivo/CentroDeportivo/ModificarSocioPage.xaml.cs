@@ -22,7 +22,7 @@ namespace CentroDeportivo
                 await DisplayAlert("Aviso", "El código no puede estar vacío", "OK");
 
             else if (!modeloUsuarios.ValidarUsuario(codigo))
-                await DisplayAlert("Aviso", "El código no se encuentra registrado", "OK");
+                await DisplayAlert("Aviso", "El código introducido no se encuentra registrado", "OK");
 
             else
             {

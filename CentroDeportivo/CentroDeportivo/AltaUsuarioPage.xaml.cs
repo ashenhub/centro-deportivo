@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-
 using Xamarin.Forms;
 
 namespace CentroDeportivo
@@ -8,6 +6,7 @@ namespace CentroDeportivo
 	public partial class AltaUsuarioPage : ContentPage
 	{
         private Modelo modeloUsuarios;
+
         public AltaUsuarioPage(Modelo modeloUsuarios)
         {
 			InitializeComponent();
@@ -20,23 +19,33 @@ namespace CentroDeportivo
             string nombre = nombreEntry.Text;
             string apellidos = apellidoEntry.Text;
             DateTime fechaNacimiento = pickerFechaNacimiento.Date;
-            string sexo = pickerSexo.SelectedItem.ToString();
+            string sexo = "";
+            if (pickerSexo.SelectedIndex >= 0)
+                sexo = pickerSexo.SelectedItem.ToString();
             bool esSocio = socioSwitch.IsToggled;
 
             if (string.IsNullOrEmpty(codigo))
-                await DisplayAlert("Aviso", "Usuario no añadido: el código no puede estar vacío", "OK");
-                    
+                await DisplayAlert("Aviso", "El código no puede estar vacío", "OK");
+
+            else if (string.IsNullOrEmpty(nombre))
+                await DisplayAlert("Aviso", "El nombre no puede estar vacío", "OK");
+
+            else if (string.IsNullOrEmpty(apellidos))
+                await DisplayAlert("Aviso", "El apellido no puede estar vacío", "OK");
+
+            else if (string.IsNullOrEmpty(sexo))
+                await DisplayAlert("Aviso", "El sexo no puede estar vacío", "OK");
+
             else if (modeloUsuarios.ValidarUsuario(codigo))
                 await DisplayAlert("Aviso", "Usuario no añadido: el código ya existe en el sistema", "OK");
-                    
+            
             else
             {
                 Usuario nuevoUsuario = new Usuario(codigo, nombre, apellidos, fechaNacimiento, esSocio, sexo);
                 modeloUsuarios.AgregarUsuario(nuevoUsuario);
+                LimpiarCampos();
                 await DisplayAlert("Éxito", "Usuario añadido correctamente", "OK");
-            }
-
-            LimpiarCampos();
+            } 
         }
 
         private void LimpiarCampos()
@@ -47,6 +56,7 @@ namespace CentroDeportivo
             pickerFechaNacimiento.Date = DateTime.Now;
             pickerSexo.SelectedIndex = -1;
             socioSwitch.IsToggled = true;
+
         }
     }
 }
