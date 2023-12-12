@@ -14,7 +14,7 @@ namespace CentroDeportivo
             this.modeloUsuarios = modeloUsuarios;
 		}
 
-        private void AltaUsuario_Clicked(object sender, EventArgs e)
+        async private void AltaUsuario_Clicked(object sender, EventArgs e)
         {
             string codigo = codigoEntry.Text;
             string nombre = nombreEntry.Text;
@@ -24,21 +24,16 @@ namespace CentroDeportivo
             bool esSocio = socioSwitch.IsToggled;
 
             if (string.IsNullOrEmpty(codigo))
-            {
-                DisplayAlert("Aviso", "Usuario no añadido: el código no puede estar vacío", "OK");
-
-            }
+                await DisplayAlert("Aviso", "Usuario no añadido: el código no puede estar vacío", "OK");
                     
             else if (modeloUsuarios.ValidarUsuario(codigo))
-            {
-                DisplayAlert("Aviso", "Usuario no añadido: el código ya existe en el sistema", "OK");
-            }
+                await DisplayAlert("Aviso", "Usuario no añadido: el código ya existe en el sistema", "OK");
                     
             else
             {
                 Usuario nuevoUsuario = new Usuario(codigo, nombre, apellidos, fechaNacimiento, esSocio, sexo);
                 modeloUsuarios.AgregarUsuario(nuevoUsuario);
-                DisplayAlert("Éxito", "Usuario añadido correctamente", "OK");
+                await DisplayAlert("Éxito", "Usuario añadido correctamente", "OK");
             }
 
             LimpiarCampos();
@@ -52,7 +47,6 @@ namespace CentroDeportivo
             pickerFechaNacimiento.Date = DateTime.Now;
             pickerSexo.SelectedIndex = -1;
             socioSwitch.IsToggled = true;
-
         }
     }
 }

@@ -37,7 +37,7 @@
                 BackgroundColor="LightGray"
                 Padding="12" Margin="10,20"
                 TextColor="Black" FontAttributes="Bold"
-                WidthRequest="190" HorizontalOptions="Start"
+                WidthRequest="150" HorizontalOptions="Start"
                 Clicked="AltaActividad_Clicked"
             />    
         </StackLayout>

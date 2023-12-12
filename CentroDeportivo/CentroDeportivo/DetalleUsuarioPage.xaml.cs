@@ -14,16 +14,15 @@ namespace CentroDeportivo
             InitializeComponent();
 
             usuario = selectedUsuario;
-            BindingContext = usuario;
             MostrarDetalleUsuario();
 
         }
 
         private void MostrarDetalleUsuario()
         {
+            codigoLabel.Text = $"Código: {usuario.Codigo}";
             nombreLabel.Text = $"Nombre: {usuario.Nombre}";
             apellidosLabel.Text = $"Apellidos: {usuario.Apellidos}";
-            codigoLabel.Text = $"Código: {usuario.Codigo}";
             fechaNacLabel.Text = $"Fecha de Nacimiento: {usuario.FechaNacimiento}";
             sexoLabel.Text = $"Sexo: {usuario.Sexo}";
 

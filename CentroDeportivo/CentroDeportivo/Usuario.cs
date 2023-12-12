@@ -44,8 +44,7 @@ namespace CentroDeportivo
         public void AgregarActividadRealizada(ActividadRealizada actividad)
         {
             ActividadesRealizadas.Add(actividad);
-            
+        }
     }
-}
 }
 

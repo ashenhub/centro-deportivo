@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-
 using Xamarin.Forms;
 
 namespace CentroDeportivo
@@ -8,6 +6,7 @@ namespace CentroDeportivo
 	public partial class ModificarSocioPage : ContentPage
 	{
         private Modelo modeloUsuarios;
+
         public ModificarSocioPage (Modelo modeloUsuarios)
 		{
 			InitializeComponent ();
@@ -19,17 +18,20 @@ namespace CentroDeportivo
             bool socio;
             string codigo = codigoEntry.Text;
 
-            if (!modeloUsuarios.ValidarUsuario(codigo))
-                await DisplayAlert("Aviso", "El usuario proporcionado no se encuentra registrado", "OK");
+            if (string.IsNullOrEmpty(codigo))
+                await DisplayAlert("Aviso", "El código no puede estar vacío", "OK");
+
+            else if (!modeloUsuarios.ValidarUsuario(codigo))
+                await DisplayAlert("Aviso", "El código no se encuentra registrado", "OK");
 
             else
             {
                 socio = modeloUsuarios.ModificarSocio();
 
                 if (socio)
-                    await DisplayAlert("Cambio realizado", "El usuario ahora es socio", "OK");
+                    await DisplayAlert("Éxito", "Cambio realizado: el usuario ahora es socio", "OK");
                 else
-                    await DisplayAlert("Cambio realizado", "El usuario ya no es socio", "OK");
+                    await DisplayAlert("Éxito", "Cambio realizado: el usuario ya no es socio", "OK");
             }
         }
     }

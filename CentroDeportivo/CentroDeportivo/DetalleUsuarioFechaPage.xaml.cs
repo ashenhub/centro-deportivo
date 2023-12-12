@@ -19,7 +19,6 @@ namespace CentroDeportivo
 			fechaAux = selectedFecha;
 
             MostrarActividadesPorFecha();
-
         }
 
         private void MostrarActividadesPorFecha()
@@ -35,6 +34,7 @@ namespace CentroDeportivo
             }
 
             actividadFechaListView.ItemsSource = listaActividadesAux;
+            headerLabel.Text = "Actividades de " + usuarioAux.Nombre + " " + usuarioAux.Apellidos;
         }
     }
 }

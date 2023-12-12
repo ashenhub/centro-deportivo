@@ -16,7 +16,7 @@ androidsdkpath=/users/alumnoad/library/developer/xamarin/android-sdk-macosx/
 androidndkpath=
 javasdkpath=/library/java/javavirtualmachines/microsoft-11.jdk/contents/home/
 androidsequencepointsmode=none
-xamarinandroidversion=13.2.1-2
+xamarinandroidversion=13.2.2-0
 monosymbolarchive=false
 androiduselatestplatformsdk=false
 targetframeworkversion=v13.0
@@ -25,11 +25,11 @@ androidgeneratejnimarshalmethods=false
 os=unix
 androidincludedebugsymbols=true
 androidpackagenamingpolicy=lowercasecrc64
-_nugetassetstimestamp=638376399507658030
+_nugetassetstimestamp=638379848453955145
 typemapkind=strings-asm
 androidsupportedabis=arm64-v8a
 armeabi-v7a
 x86
 x86_64
 androidmanifestplaceholders=
-projectfullpath=/users/alumnoad/projects/centro-deportivo/centrodeportivo/centrodeportivo.android/centrodeportivo.android.csproj
+projectfullpath=/users/alumnoad/projects/centrodeportivo/centrodeportivo/centrodeportivo.android/centrodeportivo.android.csproj

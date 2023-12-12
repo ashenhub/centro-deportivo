@@ -19,9 +19,8 @@ namespace CentroDeportivo
             string codigo = codigoEntry.Text;
 
             if (!modeloUsuarios.ValidarUsuario(codigo))
-            {
                 await DisplayAlert("Aviso", "El código introducido no se encuentra registrado", "OK");
-            }
+      
             else
             {
                 modeloUsuarios.EliminarUsuario();

@@ -17,10 +17,9 @@ namespace CentroDeportivo
         {
             InitializeComponent();
             this.modeloUsuarios = modeloUsuarios;
-
         }
 
-        private void BuscarFecha_Clicked(object sender, EventArgs e)
+        async private void BuscarFecha_Clicked(object sender, EventArgs e)
         {
             listaUsuariosAux.Clear();
             usuariosFechaListView.IsVisible = false;
@@ -40,10 +39,16 @@ namespace CentroDeportivo
                 }
             }
             usuariosFechaListView.ItemsSource = new ObservableCollection<Usuario>(listaUsuariosAux);
-            usuariosFechaListView.IsVisible = true;
+            
+
+            if (listaUsuariosAux.Count == 0)
+                await DisplayAlert("Aviso", "No se encontraron usuarios para esa fecha", "OK");
+
+            else
+                usuariosFechaListView.IsVisible = true;
         }
 
-        private async void usuariosListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        async private void usuariosListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             if (e.SelectedItem is Usuario selectedUsuario)
                 await Navigation.PushAsync(new DetalleUsuarioFechaPage(selectedUsuario, fechaActividad));

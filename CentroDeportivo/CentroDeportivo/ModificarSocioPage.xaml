@@ -14,9 +14,8 @@
                 x:Name="codigoEntry"
                 Placeholder="Código de usuario"
                 FontSize="18"
-                Margin="10,10,10,10"
+                Margin="10,0"
             />
-           
             <Button
                 x:Name="ModificarBtn"
                 Text="MODIFICAR"

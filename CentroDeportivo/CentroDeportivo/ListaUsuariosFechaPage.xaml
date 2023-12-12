@@ -5,26 +5,35 @@
     x:Class="CentroDeportivo.ListaUsuariosFechaPage">
     <ContentPage.Content>
         <StackLayout Orientation="Vertical">
+            <Label
+                Text="Indique una fecha para buscar usuarios"
+                FontSize="17" TextColor="Gray" FontAttributes="Bold"
+                Margin="10,10"
+            />
             <DatePicker
                     x:Name="pickerFechaActividad"
                     Format="dd/MM/yyyy" FontSize="17"
                     Margin="10,0"
                 />
              <Button
-                x:Name="AceptarBtn"
-                Text="ACEPTAR"
+                x:Name="BuscarBtn"
+                Text="BUSCAR"
                 BackgroundColor="LightGray"
                 Padding="12" Margin="10,20"
                 TextColor="Black" FontAttributes="Bold"
-                WidthRequest="190" HorizontalOptions="Start"
+                WidthRequest="150" HorizontalOptions="Start"
                 Clicked="BuscarFecha_Clicked"
             />
 
-            <ListView x:Name="usuariosFechaListView" ItemSelected="usuariosListView_ItemSelected" IsVisible="false">
+            <ListView x:Name="usuariosFechaListView" ItemSelected="usuariosListView_ItemSelected"
+                      Margin="10,0" IsVisible="false">
+                <ListView.Header>
+                    <Label Text="Usuarios" FontAttributes="Bold"/>
+                </ListView.Header>
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <StackLayout Orientation="Horizontal" Margin="10">
+                            <StackLayout Orientation="Horizontal">
                                 <Label Text="{Binding Nombre}" VerticalOptions="Center"/>
                                 <Label Text="{Binding Apellidos}" VerticalOptions="Center"/>
                             </StackLayout>

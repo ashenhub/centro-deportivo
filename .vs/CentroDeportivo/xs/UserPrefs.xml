@@ -1,38 +1,49 @@
-﻿<Properties StartupConfiguration="{B85302A3-2E10-43E5-9382-87B95B955D1B}|Default" GitUserInfo="UsingMD">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="CentroDeportivo/CentroDeportivo/Modelo.cs">
+﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{B85302A3-2E10-43E5-9382-87B95B955D1B}|Default">
+  <MonoDevelop.Ide.ItemProperties.CentroDeportivo.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.2CD033A5-F2D6-4771-89C4-FF0661F627A6" />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.SelectDevice" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="CentroDeportivo/CentroDeportivo/MainPage.xaml.cs" />
-      <File FileName="CentroDeportivo/CentroDeportivo/MainPage.xaml" />
-      <File FileName="CentroDeportivo/CentroDeportivo/App.xaml.cs" />
-      <File FileName="CentroDeportivo/CentroDeportivo/AltaUsuarioPage.xaml" />
-      <File FileName="CentroDeportivo/CentroDeportivo/AltaUsuarioPage.xaml.cs" />
-      <File FileName="CentroDeportivo/CentroDeportivo/RegistrarVisitaPage.xaml" />
+      <File FileName="CentroDeportivo/CentroDeportivo/MainPage.xaml.cs" Line="40" Column="1" />
+      <File FileName="CentroDeportivo/CentroDeportivo/MainPage.xaml" Line="5" Column="31" />
+      <File FileName="CentroDeportivo/CentroDeportivo/App.xaml.cs" Line="27" Column="6" />
+      <File FileName="CentroDeportivo/CentroDeportivo/AltaUsuarioPage.xaml" Line="28" Column="52" />
+      <File FileName="CentroDeportivo/CentroDeportivo/AltaUsuarioPage.xaml.cs" Line="20" Column="46" />
+      <File FileName="CentroDeportivo/CentroDeportivo/RegistrarVisitaPage.xaml" Line="32" Column="30" />
       <File FileName="CentroDeportivo/CentroDeportivo/App.xaml" />
-      <File FileName="CentroDeportivo/CentroDeportivo.iOS/Main.cs" />
-      <File FileName="CentroDeportivo/CentroDeportivo/RegistrarVisitaPage.xaml.cs" />
-      <File FileName="CentroDeportivo/CentroDeportivo/EliminarUsuarioPage.xaml.cs" />
-      <File FileName="CentroDeportivo/CentroDeportivo/EliminarUsuarioPage.xaml" />
-      <File FileName="CentroDeportivo/CentroDeportivo/ListaUsuariosPage.xaml" />
-      <File FileName="CentroDeportivo/CentroDeportivo/ListaUsuariosPage.xaml.cs" />
-      <File FileName="CentroDeportivo/CentroDeportivo/ListaUsuariosFechaPage.xaml" />
-      <File FileName="CentroDeportivo/CentroDeportivo/DetalleUsuarioPage.xaml.cs" />
-      <File FileName="CentroDeportivo/CentroDeportivo/Usuario.cs" Line="17" Column="25" />
-      <File FileName="CentroDeportivo/CentroDeportivo/DetalleUsuarioPage.xaml" />
-      <File FileName="CentroDeportivo/CentroDeportivo/Modelo.cs" Line="19" Column="61" />
-      <File FileName="CentroDeportivo/CentroDeportivo/ModificarSocioPage.xaml" />
-      <File FileName="CentroDeportivo/CentroDeportivo/ActividadRealizada.cs" />
-      <File FileName="CentroDeportivo/CentroDeportivo/ListaUsuariosFechaPage.xaml.cs" />
-      <File FileName="CentroDeportivo/CentroDeportivo/ModificarSocioPage.xaml.cs" Line="20" Column="10" />
+      <File FileName="CentroDeportivo/CentroDeportivo.iOS/Main.cs" Line="17" Column="1" />
+      <File FileName="CentroDeportivo/CentroDeportivo/ListaUsuariosPage.xaml" Line="19" Column="67" />
+      <File FileName="CentroDeportivo/CentroDeportivo/ListaUsuariosPage.xaml.cs" Line="29" Column="51" />
+      <File FileName="CentroDeportivo/CentroDeportivo/ListaUsuariosFechaPage.xaml" Line="25" Column="35" />
+      <File FileName="CentroDeportivo/CentroDeportivo/ListaUsuariosFechaPage.xaml.cs" Line="49" Column="103" />
+      <File FileName="CentroDeportivo/CentroDeportivo/ModificarSocioPage.xaml" Line="32" Column="15" />
+      <File FileName="CentroDeportivo/CentroDeportivo/ModificarSocioPage.xaml.cs" Line="15" Column="10" />
+      <File FileName="CentroDeportivo/CentroDeportivo/EliminarUsuarioPage.xaml" Line="10" Column="22" />
+      <File FileName="CentroDeportivo/CentroDeportivo/EliminarUsuarioPage.xaml.cs" Line="28" Column="91" />
+      <File FileName="CentroDeportivo/CentroDeportivo/DetalleUsuarioPage.xaml" Line="58" Column="35" />
+      <File FileName="CentroDeportivo/CentroDeportivo/DetalleUsuarioPage.xaml.cs" Line="17" Column="38" />
+      <File FileName="CentroDeportivo/CentroDeportivo/EmptyClass.cs" Line="44" Column="21" />
+      <File FileName="CentroDeportivo/CentroDeportivo/ActividadRealizada.cs" Line="15" Column="6" />
+      <File FileName="CentroDeportivo/CentroDeportivo/Modelo.cs" Line="25" Column="10" />
+      <File FileName="CentroDeportivo/CentroDeportivo/RegistrarVisitaPage.xaml.cs" Line="2" Column="21" />
+      <File FileName="CentroDeportivo/CentroDeportivo/DetalleUsuarioFechaPage.xaml" Line="9" Column="47" />
+      <File FileName="CentroDeportivo/CentroDeportivo/DetalleUsuarioFechaPage.xaml.cs" Line="34" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="CentroDeportivo" expanded="True">
             <Node name="CentroDeportivo" expanded="True">
+              <Node name="AltaUsuarioPage.xaml" expanded="True" />
+              <Node name="App.xaml" expanded="True" />
+              <Node name="DetalleUsuarioFechaPage.xaml" expanded="True" />
+              <Node name="DetalleUsuarioPage.xaml" expanded="True" />
+              <Node name="EliminarUsuarioPage.xaml" expanded="True" />
+              <Node name="ListaUsuariosFechaPage.xaml" expanded="True" />
+              <Node name="ListaUsuariosPage.xaml" expanded="True" />
               <Node name="MainPage.xaml" expanded="True" />
-              <Node name="Modelo.cs" selected="True" />
               <Node name="ModificarSocioPage.xaml" expanded="True" />
+              <Node name="RegistrarVisitaPage.xaml" expanded="True" />
             </Node>
             <Node name="CentroDeportivo.iOS" expanded="True" />
           </Node>
@@ -40,12 +51,10 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.SelectDevice" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.CentroDeportivo.Android PreferredExecutionTarget="Android.SelectDevice" />
-  <MonoDevelop.Ide.ItemProperties.CentroDeportivo.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.E7E7BD8A-4F4B-4066-A4D7-077A4B9DE358" />
 </Properties>

@@ -11,6 +11,7 @@ namespace CentroDeportivo
 		{
             InitializeComponent();
             this.modeloUsuarios = modeloUsuarios;
+
             MostrarUsuariosEnListView();
         }
 
@@ -21,11 +22,9 @@ namespace CentroDeportivo
 
         private async void OnUsuarioSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            // Aquí puedes manejar la selección del usuario
             if (e.SelectedItem is Usuario selectedUsuario)
                 await Navigation.PushAsync(new DetalleUsuarioPage(selectedUsuario));
 
-           // Deselecciona el elemento del ListView
            ((ListView)sender).SelectedItem = null;
         }
     }

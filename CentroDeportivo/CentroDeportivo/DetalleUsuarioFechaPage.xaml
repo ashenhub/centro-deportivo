@@ -10,7 +10,7 @@
                 Margin="10,20"
                 VerticalOptions="FillAndExpand" HeightRequest="50">
                 <ListView.Header>
-                    <Label Text="Actividades Realizadas" FontAttributes="Bold"/>
+                    <Label x:Name="headerLabel" Text="Actividades Realizadas" FontAttributes="Bold"/>
                 </ListView.Header>
                 <ListView.ItemTemplate>
                     <DataTemplate>

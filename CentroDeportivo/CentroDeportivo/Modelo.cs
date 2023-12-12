@@ -33,7 +33,6 @@ namespace CentroDeportivo
             listaUsuarios.Add(new Usuario("12345", "Juan", "López García", new DateTime(1995, 05, 20), true, "Masculino", a1, a3, a4));
             listaUsuarios.Add(new Usuario("67890", "María", "Martínez Pérez", new DateTime(1988, 11, 03), false, "Femenino", a2, a1, a4));
             listaUsuarios.Add(new Usuario("13579", "Carlos", "Fernández Rodríguez", new DateTime(2002, 03, 15), true, "Masculino", a3, a2, a4));
-
         }
 
         public bool ValidarUsuario(string codigo)

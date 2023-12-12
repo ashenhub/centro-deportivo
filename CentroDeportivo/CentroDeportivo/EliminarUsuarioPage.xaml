@@ -14,7 +14,7 @@
                 x:Name="codigoEntry"
                 Placeholder="Código de usuario"
                 FontSize="18"
-                Margin="10,10,10,10"
+                Margin="10,0"
             />
             <Button
                 x:Name="EliminarBtn"
@@ -22,7 +22,7 @@
                 BackgroundColor="LightGray"
                 Padding="12" Margin="10,20"
                 TextColor="Black" FontAttributes="Bold"
-                WidthRequest="190" HorizontalOptions="Start"
+                WidthRequest="150" HorizontalOptions="Start"
                 Clicked="EliminarUsuario_Clicked"
             />    
         </StackLayout>

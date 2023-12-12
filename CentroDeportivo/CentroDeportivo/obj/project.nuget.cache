@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3dTT9uBlFkzsNJFLYb44BovJHnH7YScuO3Xv6uZvG6v3Y6+WUo70AndjFlKUDni9ky1sJUobvXC0doNDw2BoGA==",
+  "dgSpecHash": "n/Kb5+9VULI0o16QDrJ59/ZrPv6AKnP8CJMT9bFdo3z8WS15dGjQxiz0cHp9nEjVGbHSugzdoXA6YqvjFugonQ==",
   "success": true,
-  "projectFilePath": "/Users/alumnoad/Projects/centro-deportivo/CentroDeportivo/CentroDeportivo/CentroDeportivo.csproj",
+  "projectFilePath": "/Users/alumnoad/Projects/CentroDeportivo/CentroDeportivo/CentroDeportivo/CentroDeportivo.csproj",
   "expectedPackageFiles": [
     "/Users/alumnoad/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "/Users/alumnoad/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512",

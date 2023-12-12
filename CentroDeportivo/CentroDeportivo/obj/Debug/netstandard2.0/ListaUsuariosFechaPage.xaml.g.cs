@@ -20,7 +20,7 @@ namespace CentroDeportivo {
         private global::Xamarin.Forms.DatePicker pickerFechaActividad;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.Button AceptarBtn;
+        private global::Xamarin.Forms.Button BuscarBtn;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::Xamarin.Forms.ListView usuariosFechaListView;
@@ -29,7 +29,7 @@ namespace CentroDeportivo {
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(ListaUsuariosFechaPage));
             pickerFechaActividad = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.DatePicker>(this, "pickerFechaActividad");
-            AceptarBtn = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "AceptarBtn");
+            BuscarBtn = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "BuscarBtn");
             usuariosFechaListView = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ListView>(this, "usuariosFechaListView");
         }
     }
