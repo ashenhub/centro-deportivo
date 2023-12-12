@@ -6,13 +6,13 @@
     <ContentPage.Content>
         <StackLayout Orientation="Vertical">
             <Label
-                Text="Introduzca el código del usuario a eliminar"
+                Text="Introduzca el DNI del usuario a eliminar"
                 FontSize="17" TextColor="Gray" FontAttributes="Bold"
                 Margin="10,10"
             />
             <Entry
                 x:Name="codigoEntry"
-                Placeholder="DNI de usuario"
+                Placeholder="DNI del usuario"
                 FontSize="18"
                 Margin="10,0"
             />

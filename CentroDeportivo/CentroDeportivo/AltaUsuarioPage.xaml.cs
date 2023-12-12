@@ -48,10 +48,9 @@ namespace CentroDeportivo
                 modeloUsuarios.AgregarUsuario(nuevoUsuario);
                 LimpiarCampos();
                 await DisplayAlert("Éxito", "Usuario añadido correctamente", "OK");
-            }else
-            {
+            }
+            else
                 await DisplayAlert("Error", "Formato de DNI incorrecto", "OK");
-            } 
         }
 
         private void LimpiarCampos()

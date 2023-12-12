@@ -31,8 +31,8 @@ namespace CentroDeportivo
             a4 = new ActividadRealizada("Actividad Libre", new DateTime(2023, 05, 10));
 
             listaUsuarios.Add(new Usuario("12345678A", "Juan", "López García", new DateTime(1995, 05, 20), true, "Masculino", a1, a3, a4));
-            listaUsuarios.Add(new Usuario("00000000B", "María", "Martínez Pérez", new DateTime(1988, 11, 03), false, "Femenino", a2, a1, a4));
-            listaUsuarios.Add(new Usuario("11111111C", "Carlos", "Fernández Rodríguez", new DateTime(2002, 03, 15), true, "Masculino", a3, a2, a4));
+            listaUsuarios.Add(new Usuario("98327466B", "María", "Martínez Pérez", new DateTime(1988, 11, 03), false, "Femenino", a2, a1, a4));
+            listaUsuarios.Add(new Usuario("12639913C", "Carlos", "Fernández Rodríguez", new DateTime(2002, 03, 15), true, "Masculino", a3, a2, a4));
         }
 
         public bool ValidarUsuario(string codigo)

@@ -23,8 +23,6 @@ namespace CentroDeportivo
             if (string.IsNullOrEmpty(codigo))
                 await DisplayAlert("Aviso", "El DNI no puede estar vacío", "OK");
 
-            
-
             else if (Regex.IsMatch(codigo, patronDNI) == true)
             {
                 if (!modeloUsuarios.ValidarUsuario(codigo))
@@ -40,10 +38,9 @@ namespace CentroDeportivo
                     else
                         await DisplayAlert("Éxito", "Cambio realizado: el usuario ya no es socio", "OK");
                 }
-            } else
-            {
-                await DisplayAlert("Error", "Formato de DNI incorrecto", "OK");
             }
+            else
+                await DisplayAlert("Error", "Formato de DNI incorrecto", "OK");
         }
     }
 }

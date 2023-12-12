@@ -19,9 +19,9 @@ namespace CentroDeportivo
             string codigo = codigoEntry.Text;
             string patronDNI = @"^\d{8}[a-zA-Z]$";
 
-
             if (string.IsNullOrEmpty(codigo))
                 await DisplayAlert("Aviso", "El DNI no puede estar vacío", "OK");
+
             else if (Regex.IsMatch(codigo, patronDNI) == true)
             {
                 if (!modeloUsuarios.ValidarUsuario(codigo))
@@ -34,9 +34,7 @@ namespace CentroDeportivo
                 }
             }
             else
-            {
                 await DisplayAlert("Error", "Formato de DNI incorrecto", "OK");
-            }
         }
     }
 }

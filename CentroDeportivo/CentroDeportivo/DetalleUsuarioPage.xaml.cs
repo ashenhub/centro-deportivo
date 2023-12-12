@@ -15,7 +15,6 @@ namespace CentroDeportivo
 
             usuario = selectedUsuario;
             MostrarDetalleUsuario();
-
         }
 
         private void MostrarDetalleUsuario()

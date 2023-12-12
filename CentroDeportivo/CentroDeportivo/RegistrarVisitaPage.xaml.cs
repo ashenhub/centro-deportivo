@@ -24,16 +24,14 @@ namespace CentroDeportivo
             if (string.IsNullOrEmpty(codigo))
                 await DisplayAlert("Aviso", "El DNI no puede estar vacío", "OK");
 
-     
-
             else if (Regex.IsMatch(codigo, patronDNI) == true)
             {
-                if (!modeloUsuarios.ValidarUsuario(codigo)) {
+                if (!modeloUsuarios.ValidarUsuario(codigo))
                     await DisplayAlert("Aviso", "El DNI introducido no se encuentra registrado", "OK");
-                }
-                else if (actividadPicker.SelectedIndex < 0) {
+                
+                else if (actividadPicker.SelectedIndex < 0) 
                     await DisplayAlert("Aviso", "Por favor, seleccione una actividad", "OK");
-                }
+               
                 else
                 {
                     actividad = actividadPicker.SelectedItem.ToString();
@@ -42,9 +40,7 @@ namespace CentroDeportivo
                 }
             }
             else
-            {
                 await DisplayAlert("Error", "Formato de DNI incorrecto", "OK");
-            }
         }
     }
 }
