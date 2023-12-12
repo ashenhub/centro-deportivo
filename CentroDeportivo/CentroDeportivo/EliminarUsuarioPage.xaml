@@ -12,7 +12,7 @@
             />
             <Entry
                 x:Name="codigoEntry"
-                Placeholder="Código de usuario"
+                Placeholder="DNI de usuario"
                 FontSize="18"
                 Margin="10,0"
             />

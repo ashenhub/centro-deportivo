@@ -20,7 +20,7 @@ namespace CentroDeportivo
 
         private void MostrarDetalleUsuario()
         {
-            codigoLabel.Text = $"Código: {usuario.Codigo}";
+            codigoLabel.Text = $"DNI: {usuario.Codigo}";
             nombreLabel.Text = $"Nombre: {usuario.Nombre}";
             apellidosLabel.Text = $"Apellidos: {usuario.Apellidos}";
             fechaNacLabel.Text = $"Fecha de Nacimiento: {usuario.FechaNacimiento}";

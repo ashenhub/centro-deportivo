@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text.RegularExpressions;
 using Xamarin.Forms;
 
 namespace CentroDeportivo
@@ -17,21 +18,31 @@ namespace CentroDeportivo
         {
             bool socio;
             string codigo = codigoEntry.Text;
+            string patronDNI = @"^\d{8}[a-zA-Z]$";
 
             if (string.IsNullOrEmpty(codigo))
-                await DisplayAlert("Aviso", "El código no puede estar vacío", "OK");
+                await DisplayAlert("Aviso", "El DNI no puede estar vacío", "OK");
 
-            else if (!modeloUsuarios.ValidarUsuario(codigo))
-                await DisplayAlert("Aviso", "El código introducido no se encuentra registrado", "OK");
+            
 
-            else
+            else if (Regex.IsMatch(codigo, patronDNI) == true)
             {
-                socio = modeloUsuarios.ModificarSocio();
-
-                if (socio)
-                    await DisplayAlert("Éxito", "Cambio realizado: el usuario ahora es socio", "OK");
+                if (!modeloUsuarios.ValidarUsuario(codigo))
+                {
+                    await DisplayAlert("Aviso", "El DNI introducido no se encuentra registrado", "OK");
+                }
                 else
-                    await DisplayAlert("Éxito", "Cambio realizado: el usuario ya no es socio", "OK");
+                {
+                    socio = modeloUsuarios.ModificarSocio();
+
+                    if (socio)
+                        await DisplayAlert("Éxito", "Cambio realizado: el usuario ahora es socio", "OK");
+                    else
+                        await DisplayAlert("Éxito", "Cambio realizado: el usuario ya no es socio", "OK");
+                }
+            } else
+            {
+                await DisplayAlert("Error", "Formato de DNI incorrecto", "OK");
             }
         }
     }

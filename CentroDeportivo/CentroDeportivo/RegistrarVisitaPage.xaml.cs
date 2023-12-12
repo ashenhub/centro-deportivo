@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text.RegularExpressions;
 using Xamarin.Forms;
 
 namespace CentroDeportivo
@@ -18,21 +19,31 @@ namespace CentroDeportivo
             string codigo = codigoEntry.Text;
             string actividad;
             DateTime fechaActual = pickerFechaActividad.Date;
+            string patronDNI = @"^\d{8}[a-zA-Z]$";
 
             if (string.IsNullOrEmpty(codigo))
-                await DisplayAlert("Aviso", "El código no puede estar vacío", "OK");
+                await DisplayAlert("Aviso", "El DNI no puede estar vacío", "OK");
 
-            else if (!modeloUsuarios.ValidarUsuario(codigo))
-                await DisplayAlert("Aviso", "El código introducido no se encuentra registrado", "OK");
+     
 
-            else if (actividadPicker.SelectedIndex < 0)
-                await DisplayAlert("Aviso", "Por favor, seleccione una actividad", "OK");
-
+            else if (Regex.IsMatch(codigo, patronDNI) == true)
+            {
+                if (!modeloUsuarios.ValidarUsuario(codigo)) {
+                    await DisplayAlert("Aviso", "El DNI introducido no se encuentra registrado", "OK");
+                }
+                else if (actividadPicker.SelectedIndex < 0) {
+                    await DisplayAlert("Aviso", "Por favor, seleccione una actividad", "OK");
+                }
+                else
+                {
+                    actividad = actividadPicker.SelectedItem.ToString();
+                    modeloUsuarios.RegistrarActividad(actividad, fechaActual);
+                    await DisplayAlert("Éxito", "La actividad fue registrada correctamente", "OK");
+                }
+            }
             else
             {
-                actividad = actividadPicker.SelectedItem.ToString();
-                modeloUsuarios.RegistrarActividad(actividad, fechaActual);
-                await DisplayAlert("Éxito", "La actividad fue registrada correctamente", "OK");
+                await DisplayAlert("Error", "Formato de DNI incorrecto", "OK");
             }
         }
     }
